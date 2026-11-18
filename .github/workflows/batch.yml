@@ -754,6 +754,10 @@ jobs:
           # 10 月成稿 242 / 实际发布 93，这个 62% 的漏斗一个月都没人发现。
           # 台账三层：批次明细 + 当天聚合 + latest（见 publisher.write_publish_ledger）
           git add -f data/audit/publish_ledger_*.json || true
+          # 2026-11-18：发布结果验收在后面的步骤写 publish_success_latest.json，
+          # 但此前只有本提交步骤会推 data/audit —— 漏加这个模式导致远端快照
+          # 永远停在 fork 前原作者的 11-17 旧账（含已过期的伪告警），补上。
+          git add -f data/audit/publish_success_* || true
 
           if git diff --cached --quiet; then
             echo "📝 无变化，跳过提交"
