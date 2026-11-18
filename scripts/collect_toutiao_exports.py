@@ -151,6 +151,11 @@ ASYNC_EXPORT_HINTS = ("下载中心", "导出成功", "导出中", "导出任务
 # 2026-10-14 实测：顶部导航的消息徽标「消息 6」也会被 [class*='message']
 # 选择器抓进 toasts，每页运行都打印「💬 页面提示: 消息 6」，纯误导
 EXPORT_FEEDBACK_HINTS = ASYNC_EXPORT_HINTS + ("导出", "下载", "成功", "失败", "排队")
+# 空数据态：页面渲染正常、导出控件也在，但当前窗口没有可导出的作品时，
+# 「下载Excel」是灰的，点了不弹确认框也不下载。必须识别成「无数据可导」，
+# 绝不能误判成「后台改版 / DOM 不兼容」（2026-11-18 两次 run 实证）。
+NO_DATA_HINTS = ("暂无数据", "共 0 条内容", "共0条内容", "暂无内容",
+                 "暂无作品", "没有数据", "无数据")
 # React 受控输入框万能注入：原生 setter + input/change 事件（只读日历控件用）
 JS_SET_VALUE = (
     "(el, v) => {"
@@ -215,6 +220,14 @@ class ExportButtonMissing(Exception):
 
 class ExportModalMissing(Exception):
     """点了导出按钮但没弹出确认框（或框里没有「开始下载」/按钮禁用）。"""
+
+
+class NoDataToExport(Exception):
+    """页面正常渲染，但当前窗口没有任何作品数据——导出控件是灰的，点了没反应。
+
+    这不是改版/兼容性问题，是「本来就没东西可导」。按跳过处理，不进 problems、不发告警，
+    否则每天 16:05 都会响一次「导出回收未完成」的假警报。
+    """
 
 
 class ExportAsyncRequired(Exception):
@@ -307,6 +320,22 @@ def _export_control_ready(page, spec: PageSpec) -> bool:
     return False
 
 
+def _page_has_no_data(page) -> bool:
+    """页面是否处于「无数据」空态（不是改版、不是加载失败）。
+
+    2026-11-18 实证：perf 页渲染正常（导航/表格头都在），但「共 0 条内容 + 暂无数据」，
+    右上角「下载Excel」是浅灰禁用态，点了不弹确认框——旧代码报 ExportModalMissing
+    并告警，实际是当期本来就没有可导出的作品。
+    """
+    for text in NO_DATA_HINTS:
+        try:
+            if page.get_by_text(text, exact=False).count() > 0:
+                return True
+        except Exception:
+            continue
+    return False
+
+
 def _wait_export_ready(page, spec: PageSpec,
                        timeout_ms: int = EXPORT_READY_TIMEOUT_MS,
                        poll_ms: int = 500) -> bool:
@@ -365,7 +394,8 @@ def _dump_diagnostics(page, spec: PageSpec, note: str,
     """失败现场留证：页面截图 + 可见控件文本清单 + 点击后现场证据（供改版后修选择器）。
 
     2026-10-14 教训：首版只抓 `<button>`，而 perf 页导出控件「下载Excel」是 `<a>`
-    链接——清单里反而看不到真正的导出按钮。现在 button / a / [role=button] 全抓。
+    链接——清单里反而看不到真正的导出按钮。现在 button / a / [role=button] / span 全抓
+    （2026-11-18 诊断仍看不到导出控件，怀疑它是 <span> 或包在 span 里）。
     evidence：点击「开始下载」后的新标签页/导出类响应/toast/日期读回值。
     """
     DIAG_DIR.mkdir(parents=True, exist_ok=True)
@@ -375,7 +405,7 @@ def _dump_diagnostics(page, spec: PageSpec, note: str,
     except Exception:
         shot = None
     controls, seen = [], set()
-    for selector in ("button", "a", "[role=button]"):
+    for selector in ("button", "a", "[role=button]", "span"):
         try:
             for el in page.query_selector_all(selector):
                 try:
@@ -806,6 +836,12 @@ def _collect_one(page, context, spec: PageSpec, nav_timeout_ms: int,
             raise ExportButtonMissing(
                 f"{spec.name} 页未找到导出按钮（表格区未渲染："
                 f"资源加载失败 {len(request_failures)} 条 / 或后台改版）")
+        # 控件在、但当期没数据：禁用态点了不会弹框，必须在这里拦下来。
+        # 放在 _wait_export_ready 之后，避免页面还没渲染就把加载态误判成空态。
+        if _page_has_no_data(page):
+            evidence["empty_state"] = True
+            raise NoDataToExport(
+                f"{spec.name} 页当前无数据可导出（页面显示空态，导出控件为禁用态）")
         with page.expect_download(timeout=download_timeout_ms) as dl_info:
             if not _try_click(page, spec.export_texts):
                 raise ExportButtonMissing(f"{spec.name} 页未找到导出按钮")
@@ -815,6 +851,8 @@ def _collect_one(page, context, spec: PageSpec, nav_timeout_ms: int,
                                                      now=now))
             _observe_after_click(page, evidence)
         download = dl_info.value
+    except NoDataToExport:
+        raise      # 空态不是失败：不写诊断截图、不进 problems、不发告警
     except Exception as e:
         evidence["requestfailed"] = request_failures[-5:]
         try:
@@ -900,7 +938,8 @@ def _notify_summary(result: dict, date_tag: str) -> None:
     lines = [f"统计日期: {date_tag}（前一天）",
              "作品数据按确认框内显式填写的近 7 天范围导出（窗口内作品每日 upsert 刷新累计值）"]
     for f in result.get("files", []):
-        mark = "✅" if f["action"] == "saved" else "♻️"
+        mark = {"saved": "✅", "duplicate": "♻️", "no_data": "⏭️"}.get(
+            f["action"], "•")
         note = f.get("note") or ("已投递" if f["action"] == "saved" else "同内容重复，已跳过")
         rng = f"　范围: {f['range']}" if f.get("range") else ""
         lines.append(f"{mark} {f['file']}（{note}{rng}）")
@@ -991,6 +1030,13 @@ def run(auth_file: Path = AUTH_FILE, inbox: Path = INBOX, days: int = 1,
                 except LoginExpired as e:
                     login_expired = True
                     _record_login_expired(result, spec, e)
+                    break
+                except NoDataToExport as e:
+                    # 空态 = 当期没东西可导，不是故障。保留回执但不算失败。
+                    rec = {"file": f"(无数据) {spec.name}", "action": "no_data",
+                           "note": str(e), "range": None}
+                    result["files"].append(rec)
+                    print(f"   ⏭️ {e}——跳过，不告警")
                     break
                 except Exception as e:
                     # 单页重载重试一次：10-22 事故里 perf 页只失败一次就整天断档，
