@@ -21,7 +21,7 @@
  *       Worker 的 fetch() 默认不带该头，必须显式加上（curl 会自动带，故沙箱测试能过）。
  */
 
-const REPO = 'chenwu6688/football-auto-publish';
+const REPO = 'bcfry/football-auto-publish';
 const WORKFLOW = 'batch.yml';
 const REF = 'main';
 
