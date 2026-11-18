@@ -1,37 +1,37 @@
 {
   "version": 1,
   "date": "2026-11-18",
-  "generated_at": "2026-11-18 08:03:42",
-  "board_total": 131,
+  "generated_at": "2026-11-18 18:20:56",
+  "board_total": 80,
   "diag": {
     "providers": {
       "baidu": {
+        "status": "empty",
+        "count": 0,
+        "kind": "board",
+        "tier": "P0",
+        "elapsed_s": 9.89
+      },
+      "weibo": {
         "status": "ok",
         "count": 50,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 1.28
-      },
-      "weibo": {
-        "status": "ok",
-        "count": 51,
-        "kind": "board",
-        "tier": "P0",
-        "elapsed_s": 0.87
+        "elapsed_s": 1.2
       },
       "dongqiudi": {
         "status": "ok",
         "count": 30,
         "kind": "media",
         "tier": "P0",
-        "elapsed_s": 0.45
+        "elapsed_s": 0.1
       },
       "tieba": {
         "status": "ok",
         "count": 30,
         "kind": "ugc",
         "tier": "P0",
-        "elapsed_s": 1.29
+        "elapsed_s": 1.66
       },
       "sina_sports": {
         "status": "disabled",
@@ -68,55 +68,24 @@
     "stale_dropped": 0,
     "unknown_time": 8
   },
-  "football_hits": [
-    {
-      "word": "国足2比2战平巴林",
-      "rank": 40,
-      "heat": 0,
-      "source": "baidu",
-      "kind": "board",
-      "url": "",
-      "published_at": "",
-      "entities": []
-    },
-    {
-      "word": "U19国足2比1韩国夺冠",
-      "rank": 43,
-      "heat": 0,
-      "source": "baidu",
-      "kind": "board",
-      "url": "",
-      "published_at": "",
-      "entities": []
-    },
-    {
-      "word": "邵佳一执教国足5场丢11球引争议",
-      "rank": 49,
-      "heat": 0,
-      "source": "baidu",
-      "kind": "board",
-      "url": "",
-      "published_at": "",
-      "entities": []
-    }
-  ],
+  "football_hits": [],
   "candidates": [
     {
-      "word": "【talkSPORT】加布里埃尔确认离队",
-      "rank": 28,
+      "word": "3000万欧买断卡萨多？拉科主帅：现在希望他能尽可能多上场西甲5 评",
+      "rank": 8,
       "heat": 0,
       "source": "dongqiudi",
       "entities": [
-        "加布里埃尔"
+        "拉科鲁尼亚"
       ],
       "support": [
         {
-          "title": "【talkSPORT】加布里埃尔确认离队",
-          "url": "https://www.dongqiudi.com/articles/6664373.html",
+          "title": "3000万欧买断卡萨多？拉科主帅：现在希望他能尽可能多上场西甲5 评",
+          "url": "https://www.dongqiudi.com/articles/6666080.html",
           "source": "dongqiudi"
         }
       ],
-      "event_key": "加布里埃尔#transfer",
+      "event_key": "拉科鲁尼亚#transfer",
       "providers": [
         "dongqiudi"
       ],
