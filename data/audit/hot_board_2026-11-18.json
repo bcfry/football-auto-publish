@@ -1,37 +1,37 @@
 {
   "version": 1,
   "date": "2026-11-18",
-  "generated_at": "2026-11-18 18:20:56",
-  "board_total": 80,
+  "generated_at": "2026-11-18 21:16:29",
+  "board_total": 130,
   "diag": {
     "providers": {
       "baidu": {
-        "status": "empty",
-        "count": 0,
+        "status": "ok",
+        "count": 50,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 9.89
+        "elapsed_s": 1.84
       },
       "weibo": {
         "status": "ok",
         "count": 50,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 1.2
+        "elapsed_s": 1.47
       },
       "dongqiudi": {
         "status": "ok",
         "count": 30,
         "kind": "media",
         "tier": "P0",
-        "elapsed_s": 0.1
+        "elapsed_s": 0.29
       },
       "tieba": {
         "status": "ok",
         "count": 30,
         "kind": "ugc",
         "tier": "P0",
-        "elapsed_s": 1.66
+        "elapsed_s": 1.96
       },
       "sina_sports": {
         "status": "disabled",
@@ -65,27 +65,34 @@
       }
     },
     "errors": [],
-    "stale_dropped": 0,
-    "unknown_time": 8
+    "stale_dropped": 1,
+    "unknown_time": 8,
+    "stale_samples": [
+      {
+        "title": "【Sky Sports】波赫救曼联？",
+        "age_h": 40.4
+      }
+    ]
   },
   "football_hits": [],
   "candidates": [
     {
-      "word": "3000万欧买断卡萨多？拉科主帅：现在希望他能尽可能多上场西甲5 评",
-      "rank": 8,
+      "word": "记者：皇马优先考虑拉蒙，有900万欧回购条款；不续约吕迪格意甲西甲",
+      "rank": 2,
       "heat": 0,
       "source": "dongqiudi",
       "entities": [
-        "拉科鲁尼亚"
+        "吕迪格",
+        "皇马"
       ],
       "support": [
         {
-          "title": "3000万欧买断卡萨多？拉科主帅：现在希望他能尽可能多上场西甲5 评",
-          "url": "https://www.dongqiudi.com/articles/6666080.html",
+          "title": "记者：皇马优先考虑拉蒙，有900万欧回购条款；不续约吕迪格意甲西甲",
+          "url": "https://www.dongqiudi.com/articles/6666456.html",
           "source": "dongqiudi"
         }
       ],
-      "event_key": "拉科鲁尼亚#transfer",
+      "event_key": "吕迪格|皇马#contract",
       "providers": [
         "dongqiudi"
       ],
