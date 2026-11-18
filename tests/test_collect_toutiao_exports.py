@@ -519,6 +519,42 @@ class TestExportFailure(CollectorTestBase):
         self.assertTrue(diag_files, "失败必须留存诊断（按钮清单）供改版后修选择器")
 
 
+class TestNoDataState(CollectorTestBase):
+    def test_empty_perf_page_skipped_without_false_alarm(self):
+        """2026-11-18 实证：perf 页「共 0 条内容 / 暂无数据」是空态，不是改版。
+
+        空控件灰着点了不弹框，旧代码报 ExportModalMissing + 告警；修复后 perf 跳过、
+        growth 照常投递，整体 ok、零失败告警。
+        """
+        class PerfEmptyPage(FakePage):
+            def get_by_text(self, text, exact=False):
+                # FakePage 的文本匹配不分页，这里按当前 URL 限定「只有 perf 页空」
+                if text in cte.NO_DATA_HINTS and "works-single" not in self.url:
+                    return _FakeLocator(self, "__no_such_text__")
+                return super().get_by_text(text, exact)
+
+        page = PerfEmptyPage(
+            url_map={
+                "works-single": "https://mp.toutiao.com/profile_v4/analysis/works-single/article",
+                "/fans": "https://mp.toutiao.com/profile_v4/analysis/fans",
+            },
+            link_texts=("下载Excel",),
+            button_texts=("暂无数据",),
+            downloads=[FakeDownload("粉丝趋势.xlsx", b"growth")],
+        )
+        result = self._run(page)
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["status"], "ok")
+        self.assertEqual(result["problems"], [])
+        self.assertTrue(any(f["action"] == "no_data" for f in result["files"]),
+                        "空态页要留跳过回执")
+        self.assertTrue(any(f["action"] == "saved" for f in result["files"]),
+                        "另一页有数据时照常投递")
+        titles = [t for t, _ in self.notifications]
+        self.assertTrue(any("导出回收完成" in t for t in titles))
+        self.assertFalse(any("未完成" in t for t in titles), "空态不得触发假警报")
+
+
 class TestInboxSemantics(CollectorTestBase):
     def test_same_name_same_content_is_duplicate(self):
         tmp = self.td / "dl"
