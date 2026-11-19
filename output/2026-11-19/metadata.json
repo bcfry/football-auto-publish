@@ -1,7 +1,7 @@
 {
   "date": "2026-11-19",
-  "generated_at": "2026-11-19T00:06:45.935171",
-  "total_articles": 3,
+  "generated_at": "2026-11-19T04:03:26.683508",
+  "total_articles": 6,
   "articles": [
     {
       "index": 1,
@@ -940,120 +940,1014 @@
         "images": 3,
         "degraded": []
       }
+    },
+    {
+      "index": 1,
+      "title": "范志毅 vs 郑智：两人拿亚足联年度最佳竟隔了12年",
+      "path": "/home/runner/work/_temp/output/2026-11-19/article-1-范志毅vs郑智两-26bae9.md",
+      "slug": "范志毅vs郑智两-26bae9",
+      "tags": [
+        "Fan Zhiyi",
+        "Zheng Zhi",
+        "AFC Player of the Year",
+        "China national football team"
+      ],
+      "keywords": [
+        "Fan Zhiyi",
+        "Zheng Zhi",
+        "AFC Player of the Year",
+        "China national football team"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-19/images/article-1-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-19/images/article-1-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-19/images/article-1-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-1-img-002.jpg",
+          "variant": "points",
+          "theme": "navy"
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "variant": "numbers",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-1-img-001.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_230616/648c2621a3ea8.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-19/6afe614f3f60dnative.htm",
+            "query": "郑智",
+            "alt": "中国球员两次获得亚足联年度最佳男足球员：01年范志毅、13年郑智"
+          },
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "kind": "card:numbers",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "01年范志毅13年郑智，中国两次拿亚足联最佳竟隔了12年",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 71,
+        "ok": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作",
+          "与板块[排行榜]关键词不匹配",
+          "R11数据:标题 26 字落在 21-30 回测最优区间"
+        ],
+        "judged": true
+      },
+      "_anti_copy": null,
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "相似度 0 字 / 0%，未达重度线",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "25 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "排行榜",
+      "topic_category": "未分类",
+      "column_id": "wu-jian-kuai-xun",
+      "column_name": "午间快讯",
+      "batch_name": "午间",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "三级·软性",
+      "title_elements": {
+        "numbers": [
+          "度量",
+          "中文数字"
+        ],
+        "contrasts": [
+          "明示对比",
+          "反差"
+        ],
+        "proper_nouns": [
+          "郑智"
+        ],
+        "has_number": true,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 3
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 71,
+        "pass": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 765,
+        "han_len": 495,
+        "paragraphs": 15,
+        "headings": 2,
+        "bullets": 0,
+        "quotes": 6,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      }
+    },
+    {
+      "index": 2,
+      "title": "西班牙U17五人身价压着中国U17三人，帅惟浩22.5万欧领衔",
+      "path": "/home/runner/work/_temp/output/2026-11-19/article-2-西班牙U17五人-109e09.md",
+      "slug": "西班牙U17五人-109e09",
+      "tags": [
+        "Spain U17",
+        "China U17",
+        "Jorge Dominguez",
+        "Shuai Weihao",
+        "Transfermarkt"
+      ],
+      "keywords": [
+        "Spain U17",
+        "China U17",
+        "Jorge Dominguez",
+        "Shuai Weihao",
+        "Transfermarkt"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-19/images/article-2-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-19/images/article-2-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-19/images/article-2-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-2-img-001.jpg",
+          "variant": "title",
+          "theme": "navy"
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "variant": "points",
+          "theme": "navy"
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "variant": "numbers",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-2-img-001.jpg",
+          "kind": "card:title",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "kind": "card:numbers",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "西班牙U17最高身价800万欧，中国U17最高22.5万欧差距35倍",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 0,
+        "ok": false,
+        "reasons": [
+          "[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球队/球员/教练/赛事/城市，不要写「这支豪门」）。只能用事实卡里已有的数字，不得编造。",
+          "[三要素] 三要素 2/3 未达下限（需 ≥2 项且含专名）",
+          "[三要素] 缺：专名"
+        ],
+        "judged": true
+      },
+      "_anti_copy": null,
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "相似度 0 字 / 1%，未达重度线",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "29 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "数据对比",
+      "topic_category": "未分类",
+      "column_id": "re-dian-su-ping",
+      "column_name": "热点速评",
+      "batch_name": "午间",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "三级·软性",
+      "title_elements": {
+        "numbers": [
+          "赛制",
+          "度量",
+          "中文数字"
+        ],
+        "contrasts": [
+          "落差"
+        ],
+        "proper_nouns": [],
+        "has_number": true,
+        "has_contrast": true,
+        "has_proper": false,
+        "count": 2
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 0,
+        "pass": false,
+        "reasons": [
+          "[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球队/球员/教练/赛事",
+          "[三要素] 三要素 2/3 未达下限（需 ≥2 项且含专名）"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 843,
+        "han_len": 489,
+        "paragraphs": 19,
+        "headings": 2,
+        "bullets": 0,
+        "quotes": 4,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      }
+    },
+    {
+      "index": 3,
+      "title": "万项踢青年欧冠还要交手西班牙队，中国U17这路子真不一样",
+      "path": "/home/runner/work/_temp/output/2026-11-19/article-3-万项踢青年欧冠还-f07141.md",
+      "slug": "万项踢青年欧冠还-f07141",
+      "tags": [
+        "Wan Xiang",
+        "China U17",
+        "Spain",
+        "UEFA Youth League"
+      ],
+      "keywords": [
+        "Wan Xiang",
+        "China U17",
+        "Spain",
+        "UEFA Youth League"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-19/images/article-3-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-19/images/article-3-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-19/images/article-3-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-3-img-001.jpg",
+          "variant": "title",
+          "theme": "navy"
+        },
+        {
+          "file": "article-3-img-002.jpg",
+          "variant": "points",
+          "theme": "navy"
+        },
+        {
+          "file": "article-3-img-003.jpg",
+          "variant": "numbers",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-3-img-001.jpg",
+          "kind": "card:title",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-3-img-002.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-3-img-003.jpg",
+          "kind": "card:numbers",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "没想到17岁万项对阵西班牙，竟说踢世界杯机会比结果宝贵",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 77,
+        "ok": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作",
+          "R11数据:标题 28 字落在 21-30 回测最优区间"
+        ],
+        "judged": true
+      },
+      "_anti_copy": null,
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "相似度 0 字 / 0%，未达重度线",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "28 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "八卦趣事",
+      "topic_category": "未分类",
+      "column_id": "wu-jian-kuai-xun",
+      "column_name": "午间快讯",
+      "batch_name": "午间",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "二级·突发",
+      "title_elements": {
+        "numbers": [
+          "赛制"
+        ],
+        "contrasts": [],
+        "proper_nouns": [
+          "欧冠"
+        ],
+        "has_number": true,
+        "has_contrast": false,
+        "has_proper": true,
+        "count": 2
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 77,
+        "pass": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 735,
+        "han_len": 465,
+        "paragraphs": 18,
+        "headings": 2,
+        "bullets": 0,
+        "quotes": 4,
+        "tags": [],
+        "cta": false,
+        "images": 3,
+        "degraded": []
+      }
     }
   ],
   "topics": [
     {
-      "title": "恢复速度惊人",
-      "angle": "热点事件「恢复速度惊人」，从球迷情绪与争议点切入",
-      "keywords": [],
-      "keywords_cn": [
-        "恢复速度惊人",
-        "戈森斯"
-      ],
-      "content_type": "热点球评",
-      "score": 100,
-      "controversy_level": "high",
-      "why_pick": "媒体头条（dongqiudi）",
-      "_supply_layer": "二级·突发",
-      "_hot_event_key": "戈森斯#injury",
-      "_hot_rank": 7,
-      "_hot_source": "dongqiudi",
-      "_hot_channel": "media",
-      "_hot_providers": [
-        "dongqiudi"
-      ],
-      "_hot_support": [
-        "恢复速度惊人，图片报：此前右膝受伤的戈森斯在训练中现身德甲"
-      ],
-      "_hot_support_raw": [
-        {
-          "title": "恢复速度惊人，图片报：此前右膝受伤的戈森斯在训练中现身德甲",
-          "url": "https://www.dongqiudi.com/articles/6667712.html",
-          "source": "dongqiudi"
-        }
-      ]
-    },
-    {
-      "title": "大马丁47次零封追平阿根廷纪录，竟想让球迷重新爱上",
-      "angle": "大马丁国家队47次零封追平历史纪录，他说想让球迷重新爱上阿根廷，门将数据背后是球队信任重建。",
+      "title": "01年范志毅13年郑智，中国两次拿亚足联最佳竟隔了12年",
+      "angle": "中国球员只有范志毅2001年、郑智2013年两次拿到亚足联年度最佳男足球员，中间空了12年，这12年正好是国足沉下去的一代人记忆。",
       "keywords": [
-        "Emiliano Martinez",
-        "Argentina",
-        "Costa Rica"
+        "Fan Zhiyi",
+        "Zheng Zhi",
+        "AFC Player of the Year"
       ],
       "keywords_cn": [
-        "大马丁",
-        "阿根廷",
-        "哥斯达黎加"
+        "范志毅",
+        "郑智",
+        "亚足联年度最佳"
       ],
-      "content_type": "数据对比",
+      "content_type": "排行榜",
       "score": 86,
       "controversy_level": "medium",
-      "target_emotion": "骄傲",
-      "resonance_angle": "世界杯经典时刻",
-      "series_id": "无",
-      "why_pick": "47次零封可核对，阿根廷情怀拉满",
-      "_category": "未分类",
-      "_column_id": "hua-ti-lei-tai",
-      "_column_name": "话题擂台",
-      "_column_icon": "🥊",
-      "_writing_style": "烧烤摊辩论体",
-      "_style_detail": "先摆出争议话题（一句话定调）→ 正方观点（2-3个论据）→ 反方观点（2-3个论据）→ 老六亮明态度（核心论据）→ 邀请读者说出自己的判断。语气像烧烤摊上和朋友抬杠，可以激动但不说脏话。必须给双方都有说话的机会，但最后必须有你自己的态度。",
-      "_word_count_range": [
-        400,
-        600
-      ],
-      "_interaction_type": "side_taking_vote",
-      "_interaction_guidance": "文末把判断抛给读者：'你更认哪一边？我先说我的判断和理由——…'",
-      "_topic_domain": "足球争议话题",
-      "_topic_guidance": "一个有争议的足球话题，列出正反两方观点，最后给出老六的判断和理由。话题要能让读者看完后立刻想去评论区表态。适合的话题：'XX该不该下课''XX转会到底值不值''VAR到底该不该废除'等。",
-      "_data_source_hint": "gzh_preferred",
-      "_batch_name": "晨读",
-      "_batch_time": "08:00",
-      "_reader_scenario": "通勤/早咖啡，需要快速了解发生了什么",
-      "_overall_tone": "轻快、信息密度高、适合碎片化阅读",
-      "_rank_id": "topic-1"
-    },
-    {
-      "title": "没想到巴西7-0新加坡，安帅却被重量级人物喊下课",
-      "angle": "巴西刚7比0大胜，阿斯报却说国内大人物因世界杯出局和输日本要安帅下课，赢球也保不住帅位太荒诞。",
-      "keywords": [
-        "Ancelotti",
-        "Brazil",
-        "Singapore"
-      ],
-      "keywords_cn": [
-        "安切洛蒂",
-        "巴西",
-        "新加坡"
-      ],
-      "content_type": "热点球评",
-      "score": 91,
-      "controversy_level": "high",
-      "target_emotion": "震惊",
-      "resonance_angle": "世界杯经典时刻",
-      "series_id": "无",
-      "why_pick": "7比0仍被喊下课，名帅沉浮反差极大",
-      "_category": "战报比分",
-      "_column_id": "chen-du-kuai-xun",
-      "_column_name": "晨读快讯",
-      "_column_icon": "📰",
+      "target_emotion": "怀旧",
+      "resonance_angle": "国足情结",
+      "series_id": "guozu-chronicle",
+      "why_pick": "两个具体年份专名戳老球迷国足记忆",
+      "_category": "中国足球",
+      "_column_id": "wu-jian-kuai-xun",
+      "_column_name": "午间快讯",
+      "_column_icon": "⚡",
       "_writing_style": "群聊播报体",
-      "_style_detail": "每条消息3-5句，格式为【事件概述】+一句话老六辣评。短句、快节奏、有信息量但不啰嗦。像一个人肉RSS但有态度。禁止长篇大论，每条独立成块。",
+      "_style_detail": "3-5条消息，每条3-5句。格式：【事件概述】+ 一句话老六辣评。短句、快节奏、有信息量但不啰嗦。每条独立成块。",
       "_word_count_range": [
         300,
         500
       ],
       "_interaction_type": "prediction_poll",
-      "_interaction_guidance": "文末把判断抛给读者：'你觉得XX这笔转会能成吗？'，自己先给判断，再说理由。",
+      "_interaction_guidance": "文末列三个选项让读者挑：'今天上午最劲爆的消息是？A.XX B.XX C.XX，我选A，你呢？'",
       "_topic_domain": "足球快讯",
-      "_topic_guidance": "3-5条最新足球短消息加一句话辣评。可以是一条比赛结果+一条转会动态+一条花边/争议新闻。像微信群里的足球老哥早上发的第一条消息。每条独立成块，短句快节奏。",
+      "_topic_guidance": "上午最新足球消息精选：比赛结果、转会动态、突发事件。用短句快节奏呈现，每条独立成块，每条包含事件概述+一句话老六辣评。像中午在食堂打开手机扫一眼就知道上午发生了什么。",
       "_data_source_hint": "match_preferred",
-      "_batch_name": "晨读",
-      "_batch_time": "08:00",
-      "_reader_scenario": "通勤/早咖啡，需要快速了解发生了什么",
-      "_overall_tone": "轻快、信息密度高、适合碎片化阅读",
+      "_batch_name": "午间",
+      "_batch_time": "12:00",
+      "_reader_scenario": "午休刷手机，需要快速了解上午发生了什么",
+      "_overall_tone": "信息密度高、快节奏、适合午休碎片阅读",
+      "_rank_id": "topic-0"
+    },
+    {
+      "title": "西班牙U17最高身价800万欧，中国U17最高22.5万欧差距35倍",
+      "angle": "同一届U17世界杯，西班牙5人德转身价最高800万欧，中国最高仅22.5万欧，35倍身价落差不是偶然，是青训体系差距摆在台面上。",
+      "keywords": [
+        "Spain U17",
+        "China U17",
+        "Transfermarkt value"
+      ],
+      "keywords_cn": [
+        "西班牙U17",
+        "中国U17",
+        "德转身价"
+      ],
+      "content_type": "数据对比",
+      "score": 88,
+      "controversy_level": "medium",
+      "target_emotion": "震惊",
+      "resonance_angle": "国足情结",
+      "series_id": "无",
+      "why_pick": "用可核对身价数字打中国球迷痛点",
+      "_category": "未分类",
+      "_column_id": "re-dian-su-ping",
+      "_column_name": "热点速评",
+      "_column_icon": "🔥",
+      "_writing_style": "赛后快刀体",
+      "_style_detail": "直接砸观点不铺垫 → 2-3个论据支撑 → 亮明立场。像从沙发上跳起来说的第一句话，锋利不留余地。500字以内，短平快。",
+      "_word_count_range": [
+        400,
+        600
+      ],
+      "_interaction_type": "side_taking_vote",
+      "_interaction_guidance": "文末说：'我这话是不是太极端了？你先说说你的判断，我先来——…'",
+      "_topic_domain": "足球热点评论",
+      "_topic_guidance": "从上午的比赛/新闻中选一个最值得聊的话题，快速给出观点和点评。不是深度分析，是'看完比赛后和朋友说的第一句话'。可以是一场精彩比赛的快速复盘，也可以是一个转会传闻的犀利点评。",
+      "_data_source_hint": "match_preferred",
+      "_batch_name": "午间",
+      "_batch_time": "12:00",
+      "_reader_scenario": "午休刷手机，需要快速了解上午发生了什么",
+      "_overall_tone": "信息密度高、快节奏、适合午休碎片阅读",
+      "_rank_id": "topic-1"
+    },
+    {
+      "title": "没想到17岁万项对阵西班牙，竟说踢世界杯机会比结果宝贵",
+      "angle": "17岁的万项面对西班牙这样的世界强队，开口就是荣幸、机会宝贵，老球迷看着这批孩子，想起自己年轻时第一次守电视看大赛的心情。",
+      "keywords": [
+        "Wan Xiang",
+        "China U17",
+        "Spain U17"
+      ],
+      "keywords_cn": [
+        "万项",
+        "中国U17",
+        "西班牙队"
+      ],
+      "content_type": "八卦趣事",
+      "score": 84,
+      "controversy_level": "low",
+      "target_emotion": "感动",
+      "resonance_angle": "老球迷身份认同",
+      "series_id": "无",
+      "why_pick": "少年视角写人，不评技术只写心境",
+      "_category": "未分类",
+      "_column_id": "wu-jian-kuai-xun",
+      "_column_name": "午间快讯",
+      "_column_icon": "⚡",
+      "_writing_style": "群聊播报体",
+      "_style_detail": "3-5条消息，每条3-5句。格式：【事件概述】+ 一句话老六辣评。短句、快节奏、有信息量但不啰嗦。每条独立成块。",
+      "_word_count_range": [
+        300,
+        500
+      ],
+      "_interaction_type": "prediction_poll",
+      "_interaction_guidance": "文末列三个选项让读者挑：'今天上午最劲爆的消息是？A.XX B.XX C.XX，我选A，你呢？'",
+      "_topic_domain": "足球快讯",
+      "_topic_guidance": "上午最新足球消息精选：比赛结果、转会动态、突发事件。用短句快节奏呈现，每条独立成块，每条包含事件概述+一句话老六辣评。像中午在食堂打开手机扫一眼就知道上午发生了什么。",
+      "_data_source_hint": "match_preferred",
+      "_batch_name": "午间",
+      "_batch_time": "12:00",
+      "_reader_scenario": "午休刷手机，需要快速了解上午发生了什么",
+      "_overall_tone": "信息密度高、快节奏、适合午休碎片阅读",
       "_rank_id": "topic-2"
     }
   ],
@@ -1063,37 +1957,37 @@
       "2026-11-06",
       "2026-11-19"
     ],
-    "n": 72,
+    "n": 75,
     "batch_n": 3,
     "ok": false,
     "table": {
       "转会官宣": {
         "count": 19,
-        "pct": 26.4,
+        "pct": 25.3,
         "target": 30.0,
         "over": false
       },
       "中国足球": {
         "count": 14,
-        "pct": 19.4,
+        "pct": 18.7,
         "target": 25.0,
         "over": false
       },
       "冲突舆情": {
         "count": 1,
-        "pct": 1.4,
+        "pct": 1.3,
         "target": 20.0,
         "over": false
       },
       "未分类": {
-        "count": 15,
-        "pct": 20.8,
+        "count": 18,
+        "pct": 24.0,
         "target": 15.0,
         "over": true
       },
       "战报比分": {
         "count": 23,
-        "pct": 31.9,
+        "pct": 30.7,
         "target": 10.0,
         "over": true
       }
@@ -1102,15 +1996,15 @@
   "mix_overshoot": [
     {
       "type": "战报比分",
-      "actual": 31.9,
+      "actual": 30.7,
       "target": 10.0,
-      "delta": 21.9
+      "delta": 20.7
     },
     {
       "type": "未分类",
-      "actual": 20.8,
+      "actual": 24.0,
       "target": 15.0,
-      "delta": 5.8
+      "delta": 9.0
     }
   ],
   "image_floor": {
@@ -1122,13 +2016,13 @@
     "total": 3,
     "counts": {
       "一级·确定性": 0,
-      "二级·突发": 2,
-      "三级·软性": 1
+      "二级·突发": 1,
+      "三级·软性": 2
     },
     "ratios": {
       "一级·确定性": 0.0,
-      "二级·突发": 66.7,
-      "三级·软性": 33.3
+      "二级·突发": 33.3,
+      "三级·软性": 66.7
     },
     "targets": {
       "一级·确定性": 30.0,
@@ -1137,12 +2031,12 @@
     },
     "deviations": {
       "一级·确定性": -30.0,
-      "二级·突发": 16.7,
-      "三级·软性": 13.3
+      "二级·突发": -16.7,
+      "三级·软性": 46.7
     },
     "unclassified": 0,
     "l3_breakdown": {
-      "data_driven": 1,
+      "data_driven": 2,
       "other": 0,
       "data_types": [
         "数据对比",
@@ -1158,21 +2052,21 @@
       "数量": 1
     },
     {
-      "环节": "反洗稿记分",
-      "原因": "与源文连续重合 13 字（>12，疑似洗稿）；事实点数少于最强源文（19 < 47）",
-      "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
-      "数量": 1
-    },
-    {
-      "环节": "反洗稿记分",
-      "原因": "事实点数少于最强源文（20 < 54）",
-      "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
-      "数量": 1
-    },
-    {
       "环节": "标题评分记分",
       "原因": "0分：[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球",
       "处置": "不阻断发布，已尝试重拟与三要素兜底（v2 只记分）",
+      "数量": 1
+    },
+    {
+      "环节": "配图补齐",
+      "原因": "真实图源只拿到 1 张",
+      "处置": "用 2 张原创信息图补到 3 张",
+      "数量": 1
+    },
+    {
+      "环节": "标题三要素",
+      "原因": "缺可用数字/专名，拼不出兜底标题",
+      "处置": "保留原题发布，metadata 记 title_elements.count",
       "数量": 1
     },
     {
@@ -1188,27 +2082,21 @@
       "数量": 1
     },
     {
-      "环节": "标题三要素",
-      "原因": "缺可用数字/专名，拼不出兜底标题",
-      "处置": "保留原题发布，metadata 记 title_elements.count",
+      "环节": "封面兜底",
+      "原因": "图源全断，改用标题数据卡",
+      "处置": "已配图发布；数据卡只兜底观感，不替代真实图",
       "数量": 1
     },
     {
       "环节": "配图补齐",
-      "原因": "真实图源只拿到 1 张",
-      "处置": "用 2 张原创信息图补到 3 张",
-      "数量": 1
-    },
-    {
-      "环节": "配图补齐",
-      "原因": "真实图源只拿到 1 张",
+      "原因": "真实图源只拿到 0 张",
       "处置": "用 2 张原创信息图补到 3 张",
       "数量": 1
     }
   ],
   "type": "match_analysis",
   "quota": {
-    "batch": "morning",
+    "batch": "noon",
     "max_articles": 3,
     "uplifted": true,
     "reason": "thursday_boost",
@@ -1216,20 +2104,11 @@
     "normal_max": 2,
     "uplift_max": 3,
     "weekly_limit": 2,
-    "weekly_used": 1,
-    "detail": "加发 3 篇（原因 thursday_boost，周内 1/2）",
+    "weekly_used": 2,
+    "detail": "加发 3 篇（原因 thursday_boost，周内 2/2）",
     "source": "策略手册 第五章 / 完善计划 12.1"
   },
   "ranker_mode": "rule",
-  "hot_topics": [
-    {
-      "title": "恢复速度惊人",
-      "rank": 7,
-      "source": "dongqiudi",
-      "channel": "media",
-      "event_key": "戈森斯#injury"
-    }
-  ],
   "batch_mix": {
     "slots": [
       "main",
@@ -1239,36 +2118,37 @@
     "picked": [
       {
         "slot": "main",
-        "type": "热点球评",
-        "title": "恢复速度惊人"
+        "type": "排行榜",
+        "title": "01年范志毅13年郑智，中国两次拿亚足联最佳竟隔了12年"
       },
       {
         "slot": "data",
         "type": "数据对比",
-        "title": "大马丁47次零封追平阿根廷纪录，竟想让球迷重新爱上"
+        "title": "西班牙U17最高身价800万欧，中国U17最高22.5万"
       },
       {
-        "slot": "main",
-        "type": "热点球评",
-        "title": "没想到巴西7-0新加坡，安帅却被重量级人物喊下课"
+        "slot": "extra",
+        "type": "八卦趣事",
+        "title": "没想到17岁万项对阵西班牙，竟说踢世界杯机会比结果宝贵"
       }
     ],
-    "degraded": [],
-    "skipped": [
-      {
-        "type": "转会资讯",
-        "title": "波切蒂诺刚到曼联，阿什利扬竟说换帅也难止颓势"
-      }
+    "degraded": [
+      "main 槽用次优类型补位",
+      "main 槽无可用候选（不凑数，本批少写 1 篇）"
     ],
-    "day_counts": {},
+    "skipped": [],
+    "day_counts": {
+      "热点球评": 2,
+      "数据对比": 1
+    },
     "selected": 3,
     "requested": 3
   },
   "batches_generated": [
-    "morning"
+    "noon"
   ],
-  "last_batch": "morning",
-  "last_updated": "2026-11-19 08:10:25",
+  "last_batch": "noon",
+  "last_updated": "2026-11-19 12:03:26",
   "batches_completed": [
     "morning"
   ]
