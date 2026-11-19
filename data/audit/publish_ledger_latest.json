@@ -1,24 +1,24 @@
 {
   "version": 2,
-  "date": "2026-11-18",
-  "generated_at": "2026-11-18 13:19:20",
-  "batch_filter": "noon",
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19 00:10:25",
+  "batch_filter": "morning",
   "counts": {
-    "total": 1,
-    "published": 1,
+    "total": 3,
+    "published": 3,
     "failed": 0,
     "skipped_prediction": 0,
     "skipped_already_published": 0,
     "published_without_id": 0,
     "published_without_cover": 0,
-    "drafts": 1,
-    "dropped_compliance": 1,
+    "drafts": 3,
+    "dropped_compliance": 0,
     "lost_upstream": null,
     "published_with_title_gate_issue": 0
   },
   "identity": {
-    "n_records": 1,
-    "known_status": 1,
+    "n_records": 3,
+    "known_status": 3,
     "unaccounted_status": 0,
     "records_identity_ok": true,
     "cover_ok": null,
@@ -31,23 +31,41 @@
     "available": true,
     "reason": "",
     "scope": "day_cumulative",
-    "path": "/home/runner/work/_temp/output/2026-11-18/metadata.json",
-    "drafts": 1,
-    "dropped_compliance": 1,
-    "draft_total": 2,
+    "path": "/home/runner/work/_temp/output/2026-11-19/metadata.json",
+    "drafts": 3,
+    "dropped_compliance": 0,
+    "draft_total": 3,
     "title_gate_blocked_published": 0
   },
   "platform_id_binding": {
-    "bound": 1,
+    "bound": 3,
     "unmatched": [],
     "missing_meta": false
   },
   "records": [
     {
-      "title": "皇马优先续约吕迪格却放走拉蒙，900万欧元到底卖亏了没",
+      "title": "没想到戈森斯35岁复出训练竟右膝受伤被搀扶离场",
       "slug": "",
-      "batch_name": "午间",
-      "platform_id": "7709500229237752339",
+      "batch_name": "晨读",
+      "platform_id": "7709667393466843698",
+      "reason": "",
+      "images": 3,
+      "status": "published"
+    },
+    {
+      "title": "没想到阿根廷7-0哥斯达黎加竟然半场就4-0打花",
+      "slug": "",
+      "batch_name": "晨读",
+      "platform_id": "7709667694043218441",
+      "reason": "",
+      "images": 3,
+      "status": "published"
+    },
+    {
+      "title": "安切洛蒂带巴西vs新加坡，7-0后竟被重量级人物喊下课",
+      "slug": "",
+      "batch_name": "晨读",
+      "platform_id": "7709667986734367241",
       "reason": "",
       "images": 3,
       "status": "published"
