@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18 22:23",
+  "generated_at": "2026-11-19 15:35",
   "ok": true,
   "checks": [
     {
@@ -50,13 +50,13 @@
       "item": "近 14 天成稿 R11 采用率（告警，仅可观测）",
       "ok": true,
       "advisory": true,
-      "total": 79,
+      "total": 82,
       "event_noun": 0,
-      "emotion": 2,
-      "suspense": 16,
-      "optimal_band": 72,
+      "emotion": 1,
+      "suspense": 18,
+      "optimal_band": 74,
       "detail": [
-        "近 14 天成稿 79 条：悬念词 16（20%，阈值 20%）| 21-30字 72（91%，阈值 50%）| 赛事名词 0 | 情绪词 2"
+        "近 14 天成稿 82 条：悬念词 18（22%，阈值 20%）| 21-30字 74（90%，阈值 50%）| 赛事名词 0 | 情绪词 1"
       ]
     }
   ],
