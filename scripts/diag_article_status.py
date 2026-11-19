@@ -100,6 +100,24 @@ def main():
                         urls.append(h)
                 urls = urls[:14]
 
+                # 单独进草稿箱确认两篇 U17 是不是卡在草稿
+                for draft_url in ["https://mp.toutiao.com/profile_v4/graphic/draftbox",
+                                  "https://mp.toutiao.com/profile_v4/draft/article"]:
+                    try:
+                        page.goto(draft_url, wait_until="domcontentloaded", timeout=18000)
+                        page.wait_for_timeout(2800)
+                        dtxt = page.locator("body").inner_text(timeout=8000)
+                        try:
+                            page.screenshot(path=str(OUT / ("draft_" + re.sub(r'\W', '_', draft_url) + ".png")))
+                        except Exception:
+                            pass
+                        result.setdefault("draft_pages", []).append(
+                            {"url": draft_url, "final": page.url, "len": len(dtxt),
+                             "text": dtxt[:2500].replace("\n", " | ")})
+                        scan(dtxt, f"draft:{draft_url}", result["pages"])
+                    except Exception as e:
+                        result["errors"].append(f"draft {draft_url}: {str(e)[:160]}")
+
                 for i, url in enumerate(urls):
                     try:
                         page.goto(url, wait_until="domcontentloaded", timeout=18000)
