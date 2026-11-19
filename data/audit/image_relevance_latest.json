@@ -1,12 +1,14 @@
 {
-  "generated_at": "2026-11-18 21:17:56",
+  "generated_at": "2026-11-19 08:06:47",
   "days": 7,
   "ok": null,
   "undetermined": [
     "E 产物闭环"
   ],
   "hard_failed": [],
-  "advisory_failed": [],
+  "advisory_failed": [
+    "F 拦截留痕"
+  ],
   "checks": [
     {
       "item": "A 接线",
@@ -62,10 +64,10 @@
     },
     {
       "item": "F 拦截留痕",
-      "ok": true,
+      "ok": false,
       "detail": [
-        "近 7 天「配图相关性」降级 0 次",
-        "✅ 窗口内没有拦截记录"
+        "近 7 天「配图相关性」降级 1 次",
+        "❌ 其中 1 次没写原因（= 没告警）"
       ],
       "advisory": true
     }
