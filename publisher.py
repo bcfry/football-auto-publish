@@ -735,6 +735,102 @@ def _first_pgc_id(results) -> str:
     return ""
 
 
+# 作品管理页：确认发布后回查「作品是否真的出现在已发布列表」的终判入口。
+# 2026-11-19 假成功事故：点「预览并发布」触发的是**预览/存草稿**请求
+# （is_app_preview=1, message=保存成功, code:0, 拿到的是草稿 pgc_id），
+# 旧代码把这条 code:0 当成发布成功，且发生在点确认按钮之前——两篇 U17 稿
+# 因此报了成功却只躺在草稿箱。唯一可靠信号是回查后台作品列表。
+WORKS_LIST_URL = "https://mp.toutiao.com/profile_v4/graphic/articles"
+
+# 回查终判的返回值（三态，绝不含糊）：
+#   "published"   列表里明确找到该标题 → 真发布
+#   "not_found"   列表明确加载成功（有作品行）但没这个标题 → 草稿/未发布
+#   "unknown"     页面没加载出来/没读到作品行 → 不敢下结论（见调用方保守处理）
+VERIFY_PUBLISHED = "published"
+VERIFY_NOT_FOUND = "not_found"
+VERIFY_UNKNOWN = "unknown"
+
+
+def title_in_works_text(title: str, works_text: str) -> bool:
+    """判断标题是否出现在作品管理页文本里（纯函数，便于单测）。
+
+    头条列表常把长标题截断，故用「标题前 12 字」或去空格后的完整标题比对；
+    至少 8 字才用前缀，避免短标题误命中。
+    """
+    if not title or not works_text:
+        return False
+    t = "".join(str(title).split())          # 去所有空白
+    w = "".join(str(works_text).split())
+    # 短标题（<6 字）在长列表文本里极易误命中（如「球球」命中别的标题），
+    # 必须放弃模糊匹配——宁可回查判 not_found 让人复核，不可误报成功。
+    if len(t) < 6:
+        return False
+    if t in w:
+        return True
+    prefix = t[:12]
+    return len(prefix) >= 8 and prefix in w
+
+
+def looks_like_works_loaded(works_text: str) -> bool:
+    """作品列表页是否真的渲染出了作品行（而不是空壳/加载中）。
+
+    认定的标志：出现「共 N 条内容」或状态筛选项或时间戳样式。
+    """
+    if not works_text:
+        return False
+    return any(k in works_text for k in ("条内容", "审核中", "审核未通过", "已发布"))
+
+
+def _read_works_list(page, timeout_ms: int, settle_ms: int) -> str:
+    """打开作品列表页并尽力读到渲染后的文本（只读）。"""
+    try:
+        page.goto(WORKS_LIST_URL, wait_until="domcontentloaded", timeout=timeout_ms)
+    except Exception:
+        return ""
+    text = ""
+    for _ in range(6):
+        try:
+            text = page.locator("body").inner_text(timeout=5000) or ""
+        except Exception:
+            text = ""
+        if looks_like_works_loaded(text):
+            break
+        page.wait_for_timeout(1000)
+    return text
+
+
+def verify_published_in_list(page, title: str, *, timeout_ms: int = 15000,
+                             settle_ms: int = 1500, confirm_rounds: int = 2) -> dict:
+    """发布确认后回查作品管理页，确认标题是否真的出现在已发布列表。
+
+    只读：只打开列表页、读文本，不点任何修改按钮。
+    返回 {"result": VERIFY_*, "title": ..., "evidence": ...}。
+
+    刚发布完列表可能有同步延迟，故 not_found 需连续 confirm_rounds 次确认
+    （中间等待），避免把「还没刷出来」误判成「没发布」。
+    """
+    out = {"result": VERIFY_UNKNOWN, "title": title, "evidence": ""}
+    seen_loaded = False
+    for rnd in range(max(1, confirm_rounds)):
+        text = _read_works_list(page, timeout_ms, settle_ms)
+        if not looks_like_works_loaded(text):
+            out["evidence"] = f"第{rnd+1}轮作品列表页未渲染出作品行（空壳/超时）"
+            continue
+        seen_loaded = True
+        if title_in_works_text(title, text):
+            out["result"] = VERIFY_PUBLISHED
+            out["evidence"] = f"第{rnd+1}轮作品列表命中标题"
+            return out
+        out["evidence"] = f"第{rnd+1}轮作品列表已加载但未找到标题"
+        if rnd + 1 < confirm_rounds:
+            page.wait_for_timeout(2500)          # 等同步后再确认一次
+    if seen_loaded:
+        out["result"] = VERIFY_NOT_FOUND
+    else:
+        out["result"] = VERIFY_UNKNOWN
+    return out
+
+
 def publish_article(page, article, date_str, draft_mode=False):
     """Publish a single article on Toutiao."""
     title = article["title"]
@@ -892,7 +988,34 @@ def publish_article(page, article, date_str, draft_mode=False):
                     upload_ok += 1
                     print(f"    ✅ 上传成功 ({upload_ok}/{min(len(images), 3)}) [编辑器内图片: {imgs_after}]")
                 else:
-                    print(f"    ⚠️  图片未插入编辑器")
+                    # 2026-11-19：图片未插入是假成功的诱因之一。原样重试一次
+                    # 再判失败（弹窗可能尚未渲染完、确定按钮点到别的按钮上）。
+                    print(f"    ⚠️  图片未插入编辑器，重试一次...")
+                    page.keyboard.press("Escape")
+                    page.wait_for_timeout(1200)
+                    try:
+                        page.locator('.syl-toolbar-tool.image').first.click(force=True)
+                        page.wait_for_timeout(2000)
+                        retry_el = page.locator(f'text="本地上传"').first
+                        if retry_el.is_visible(timeout=2500):
+                            with page.expect_file_chooser(timeout=8000) as fc2:
+                                retry_el.click(force=True)
+                            fc2.value.set_files(str(img_path))
+                            page.wait_for_timeout(4500)
+                            confirm2 = page.locator('button:has-text("确定")').first
+                            if confirm2.is_visible(timeout=3000):
+                                confirm2.click(force=True)
+                                page.wait_for_timeout(2500)
+                        page.keyboard.press("Escape")
+                        page.wait_for_timeout(1000)
+                    except Exception as re:
+                        print(f"    ⚠️  重试异常: {str(re)[:100]}")
+                    imgs_after2 = page.locator('.ProseMirror img').count()
+                    if imgs_after2 > imgs_before:
+                        upload_ok += 1
+                        print(f"    ✅ 重试后上传成功 ({upload_ok}/{min(len(images), 3)}) [编辑器内图片: {imgs_after2}]")
+                    else:
+                        print(f"    ⚠️  图片重试后仍未插入（本篇将按实际图数选封面）")
 
             except Exception as e:
                 print(f"    ⚠️  上传失败: {e}")
@@ -916,12 +1039,37 @@ def publish_article(page, article, date_str, draft_mode=False):
                 print(f"  📷 已选择无封面模式")
         except Exception:
             pass
-    elif len(images) >= 3:
+    # 2026-11-19 假成功事故：封面模式必须按「编辑器里实际插入的图数」选，
+    # 而不是按「提供了几张图」。两篇 U17 提供 3 张却只插入 1 张，旧代码仍点
+    # 「三图」→ 封面位凑不齐 → 真正发布没走成（草稿区提示「还需输入 2 个字」），
+    # 但草稿阶段 code:0 已让代码误报成功。按实际数量选封面可断掉这条因。
+    _cover_n = upload_ok if images else 0
+    print(f"  📷 封面模式判定: 实际插入 {_cover_n} 张 / 提供 {len(images)} 张")
+    if _cover_n >= 3:
         try:
             san_tu = page.locator('span:has-text("三图")').first
             if san_tu.is_visible(timeout=1000):
                 san_tu.click()
                 page.wait_for_timeout(500)
+                print(f"  📷 已选择三图模式")
+        except Exception:
+            pass
+    elif _cover_n == 2:
+        try:
+            er_tu = page.locator('span:has-text("双图")').first
+            if er_tu.is_visible(timeout=1000):
+                er_tu.click()
+                page.wait_for_timeout(500)
+                print(f"  📷 已选择双图模式")
+        except Exception:
+            pass
+    elif _cover_n == 1:
+        try:
+            dan_tu = page.locator('span:has-text("单图")').first
+            if dan_tu.is_visible(timeout=1000):
+                dan_tu.click()
+                page.wait_for_timeout(500)
+                print(f"  📷 已选择单图模式")
         except Exception:
             pass
 
@@ -1058,8 +1206,10 @@ def publish_article(page, article, date_str, draft_mode=False):
                         print(f"  pgc_id: {pgc_id}")
                     result = {"code": code, "message": msg, "pgc_id": pgc_id}
                     publish_results.append(result)
+                    # 2026-11-19：这条 code:0 是预览/存草稿响应，不是发布成功，
+                    # 日志别再写「发布成功」误导人；真发布由后面的回查终判定。
                     if code == 0:
-                        print(f"  ✅ 发布成功!")
+                        print(f"  💾 预览/保存响应 code:0（草稿阶段，未算发布成功）")
                     else:
                         print(f"  ❌ 发布失败!")
                         print(f"  Full response: {json.dumps(body, ensure_ascii=False)[:500]}")
@@ -1140,18 +1290,43 @@ def publish_article(page, article, date_str, draft_mode=False):
                     debug_dump_page(page, f"no_confirm_btn_{article['index']}")
                     return {"ok": False, "error": "未找到发布确认按钮"}
 
-                # Check ALL publish responses for success (if any returned Code:0, it's published).
-                # The "预览并发布" auto-save response (Code:0) counts as success too.
-                # After clicking confirm, poll briefly for new responses but accept any Code:0.
-                all_results_ok = any(r["code"] == 0 for r in publish_results)
-                if all_results_ok:
-                    return {"ok": True, "pgc_id": _first_pgc_id(publish_results)}
+                # 2026-11-19 假成功事故根因修复：
+                # 旧代码在这里用 `any(code==0 for r in publish_results)` 判成功，
+                # 但那条 code:0 是点「预览并发布」时的**存草稿/预览**响应
+                # （is_app_preview=1, message=保存成功），而且发生在点确认按钮之前。
+                # 结果两篇 U17 稿拿到草稿 ID 就报成功、实际躺在草稿箱。
+                # 现在改为：不信任草稿阶段的 code:0，点完确认后回查作品列表终判。
+                draft_saved = any(r["code"] == 0 for r in publish_results)
+                if draft_saved:
+                    print(f"  ℹ️ 草稿/预览响应 code:0（不作为发布成功依据，需回查作品列表）")
+
+                # 回查作品列表：唯一能区分「真发布」和「只存草稿」的可靠信号。
+                # 三态处理：published → 成功；not_found → 失败（草稿/未发布）；
+                # unknown → 页面没加载出来，不敢判失败误伤已发布稿，按草稿阶段
+                #           code:0 保守放行并打醒目警告（宁可漏报，不可错杀已发布）。
+                verify = verify_published_in_list(page, title)
+                vres = verify["result"]
+                print(f"  🔍 发布终判(回查作品列表): {vres} — {verify['evidence']}")
+                if vres == VERIFY_PUBLISHED:
+                    return {"ok": True, "pgc_id": _first_pgc_id(publish_results),
+                            "verify": vres}
+                if vres == VERIFY_NOT_FOUND:
+                    debug_dump_page(page, f"not_published_{article['index']}")
+                    return {"ok": False,
+                            "error": "确认后回查作品列表未找到该标题（疑似草稿/未发布）: " + verify["evidence"],
+                            "pgc_id": _first_pgc_id(publish_results), "verify": vres}
+                # unknown：保守放行（保留旧行为），但明确告警，人工可据此复核
+                if draft_saved:
+                    print(f"  ⚠️ 回查不确定 + 草稿阶段 code:0：保守按成功处理，请人工复核是否真发布")
+                    return {"ok": True, "pgc_id": _first_pgc_id(publish_results),
+                            "verify": vres, "warn": "回查不确定，未证实真发布"}
 
                 # Poll for new publish result after confirmation (up to 15s).
                 for _ in range(15):
                     page.wait_for_timeout(1000)
                     if any(r["code"] == 0 for r in publish_results):
-                        return {"ok": True, "pgc_id": _first_pgc_id(publish_results)}
+                        return {"ok": True, "pgc_id": _first_pgc_id(publish_results),
+                                "verify": vres}
 
                 # Timed out — try direct API call as fallback
                 # First API response already saved the draft; extract pgc_id and submit
