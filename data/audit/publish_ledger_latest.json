@@ -1,8 +1,8 @@
 {
   "version": 2,
   "date": "2026-11-19",
-  "generated_at": "2026-11-19 00:10:25",
-  "batch_filter": "morning",
+  "generated_at": "2026-11-19 04:07:11",
+  "batch_filter": "noon",
   "counts": {
     "total": 3,
     "published": 3,
@@ -44,28 +44,28 @@
   },
   "records": [
     {
-      "title": "没想到戈森斯35岁复出训练竟右膝受伤被搀扶离场",
+      "title": "范志毅 vs 郑智：两人拿亚足联年度最佳竟隔了12年",
       "slug": "",
-      "batch_name": "晨读",
-      "platform_id": "7709667393466843698",
+      "batch_name": "午间",
+      "platform_id": "7709728437853749798",
       "reason": "",
       "images": 3,
       "status": "published"
     },
     {
-      "title": "没想到阿根廷7-0哥斯达黎加竟然半场就4-0打花",
+      "title": "西班牙U17五人身价压着中国U17三人，帅惟浩22.5万欧领衔",
       "slug": "",
-      "batch_name": "晨读",
-      "platform_id": "7709667694043218441",
+      "batch_name": "午间",
+      "platform_id": "7709728740011475465",
       "reason": "",
       "images": 3,
       "status": "published"
     },
     {
-      "title": "安切洛蒂带巴西vs新加坡，7-0后竟被重量级人物喊下课",
+      "title": "万项踢青年欧冠还要交手西班牙队，中国U17这路子真不一样",
       "slug": "",
-      "batch_name": "晨读",
-      "platform_id": "7709667986734367241",
+      "batch_name": "午间",
+      "platform_id": "7709729035387011635",
       "reason": "",
       "images": 3,
       "status": "published"
