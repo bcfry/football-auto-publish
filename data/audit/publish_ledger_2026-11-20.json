@@ -1,14 +1,15 @@
 {
   "version": 2,
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 04:10:53",
-  "batch_filter": "noon",
+  "generated_at": "2026-11-20 07:50:50",
+  "batch_filter": "morning+noon",
   "batches": [
+    "morning",
     "noon"
   ],
   "counts": {
-    "total": 2,
-    "published": 2,
+    "total": 4,
+    "published": 4,
     "failed": 0,
     "skipped_prediction": 0,
     "skipped_already_published": 0,
@@ -16,16 +17,16 @@
     "published_without_cover": 0,
     "drafts": 2,
     "dropped_compliance": 0,
-    "lost_upstream": 0,
+    "lost_upstream": -2,
     "published_with_title_gate_issue": 0
   },
   "identity": {
-    "n_records": 2,
-    "known_status": 2,
+    "n_records": 4,
+    "known_status": 4,
     "unaccounted_status": 0,
     "records_identity_ok": true,
-    "cover_ok": true,
-    "lost_upstream": 0,
+    "cover_ok": false,
+    "lost_upstream": -2,
     "scope": "day_cumulative",
     "available": true,
     "reason": ""
@@ -36,6 +37,26 @@
     "missing_meta": false
   },
   "records": [
+    {
+      "title": "罗体：罗马冬窗优先租借+买断，原来加斯佩里尼盯边锋",
+      "slug": "",
+      "batch_name": "晨读",
+      "platform_id": "7710157221551718912",
+      "reason": "",
+      "images": 3,
+      "status": "published",
+      "batch": "morning"
+    },
+    {
+      "title": "西班牙U17身价榜25人占最多，中国U17今晚22点碰面",
+      "slug": "",
+      "batch_name": "晨读",
+      "platform_id": "7710157645553861155",
+      "reason": "",
+      "images": 3,
+      "status": "published",
+      "batch": "morning"
+    },
     {
       "title": "没想到穆西亚拉2027解约金条款在，拜仁还敢加压力逼他留",
       "slug": "",

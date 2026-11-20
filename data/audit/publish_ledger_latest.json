@@ -1,8 +1,8 @@
 {
   "version": 2,
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 04:10:53",
-  "batch_filter": "noon",
+  "generated_at": "2026-11-20 07:50:50",
+  "batch_filter": "morning",
   "counts": {
     "total": 2,
     "published": 2,
@@ -44,19 +44,19 @@
   },
   "records": [
     {
-      "title": "没想到穆西亚拉2027解约金条款在，拜仁还敢加压力逼他留",
+      "title": "罗体：罗马冬窗优先租借+买断，原来加斯佩里尼盯边锋",
       "slug": "",
-      "batch_name": "午间",
-      "platform_id": "7710100581603492406",
+      "batch_name": "晨读",
+      "platform_id": "7710157221551718912",
       "reason": "",
       "images": 3,
       "status": "published"
     },
     {
-      "title": "U17国足22年重返决赛，竟在决赛2-3输给日本队",
+      "title": "西班牙U17身价榜25人占最多，中国U17今晚22点碰面",
       "slug": "",
-      "batch_name": "午间",
-      "platform_id": "7710100967366197814",
+      "batch_name": "晨读",
+      "platform_id": "7710157645553861155",
       "reason": "",
       "images": 3,
       "status": "published"
