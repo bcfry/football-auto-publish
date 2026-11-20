@@ -88,9 +88,9 @@
     "stale_since": "2026-11-17 10:25:20"
   },
   "hy4-preview": {
-    "prompt_tokens": 91193,
-    "completion_tokens": 12322,
-    "total_tokens": 768515,
+    "prompt_tokens": 110264,
+    "completion_tokens": 14995,
+    "total_tokens": 790259,
     "fail_streak": 0,
     "free_quota_pct": 33.5,
     "free_quota_expires_at": "2027-09-14 09:24:30",

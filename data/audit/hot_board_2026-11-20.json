@@ -1,8 +1,8 @@
 {
   "version": 1,
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 08:04:42",
-  "board_total": 132,
+  "generated_at": "2026-11-20 12:06:26",
+  "board_total": 131,
   "diag": {
     "providers": {
       "baidu": {
@@ -10,28 +10,28 @@
         "count": 50,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 2.38
+        "elapsed_s": 1.67
       },
       "weibo": {
         "status": "ok",
-        "count": 52,
+        "count": 51,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 0.82
+        "elapsed_s": 1.04
       },
       "dongqiudi": {
         "status": "ok",
         "count": 30,
         "kind": "media",
         "tier": "P0",
-        "elapsed_s": 0.46
+        "elapsed_s": 0.38
       },
       "tieba": {
         "status": "ok",
         "count": 30,
         "kind": "ugc",
         "tier": "P0",
-        "elapsed_s": 2.12
+        "elapsed_s": 1.33
       },
       "sina_sports": {
         "status": "disabled",
@@ -70,33 +70,34 @@
   },
   "football_hits": [
     {
-      "word": "芦玉菲退役后社保被欠七年五个月",
-      "rank": 45,
-      "heat": 106791,
-      "source": "weibo",
-      "kind": "board",
-      "url": "",
+      "word": "传Viper1500万高薪续约",
+      "rank": 5,
+      "heat": 814918,
+      "source": "tieba",
+      "kind": "ugc",
+      "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28369991&amp;topic_name=%E4%BC%A0Viper1500%E4%B8%87%E9%AB%98%E8%96%AA%E7%BB%AD%E7%BA%A6",
       "published_at": "",
       "entities": []
     }
   ],
   "candidates": [
     {
-      "word": "马卡：佐藤龙之介或将冬窗离队，瓦伦西亚计划将其外租西甲1 评",
-      "rank": 13,
+      "word": "拜仁希望穆西亚拉表现匹配2500万欧年薪，球员暂无离队计划德甲1 评",
+      "rank": 5,
       "heat": 0,
       "source": "dongqiudi",
       "entities": [
-        "瓦伦西亚"
+        "穆西亚拉",
+        "拜仁"
       ],
       "support": [
         {
-          "title": "马卡：佐藤龙之介或将冬窗离队，瓦伦西亚计划将其外租西甲1 评",
-          "url": "https://www.dongqiudi.com/articles/6670402.html",
+          "title": "拜仁希望穆西亚拉表现匹配2500万欧年薪，球员暂无离队计划德甲1 评",
+          "url": "https://www.dongqiudi.com/articles/6670925.html",
           "source": "dongqiudi"
         }
       ],
-      "event_key": "瓦伦西亚#transfer",
+      "event_key": "拜仁|穆西亚拉#transfer",
       "providers": [
         "dongqiudi"
       ],
