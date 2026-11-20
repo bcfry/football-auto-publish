@@ -1,0 +1,888 @@
+{
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T00:07:37.651643",
+  "total_articles": 2,
+  "articles": [
+    {
+      "index": 1,
+      "title": "佐藤龙之介2026当选却要冬窗走，瓦伦西亚外租找下家",
+      "path": "/home/runner/work/_temp/output/2026-11-20/article-1-佐藤龙之介202-f2cede.md",
+      "slug": "佐藤龙之介202-f2cede",
+      "tags": [
+        "Sato Ryunosuke",
+        "Valencia",
+        "Vazquez",
+        "winter transfer window"
+      ],
+      "keywords": [
+        "Sato Ryunosuke",
+        "Valencia",
+        "Vazquez",
+        "winter transfer window"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-1-img-001.jpg",
+          "variant": "title",
+          "theme": "navy"
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "variant": "points",
+          "theme": "navy"
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "variant": "numbers",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-1-img-001.jpg",
+          "kind": "card:title",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "kind": "card:numbers",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "马卡：佐藤龙之介或将冬窗离队",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 91,
+        "ok": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "R11数据:标题 26 字落在 21-30 回测最优区间"
+        ],
+        "judged": true
+      },
+      "_anti_copy": {
+        "ok": false,
+        "issues": [
+          "与源文连续重合 13 字（>12，疑似洗稿）"
+        ]
+      },
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "轻度相似（13 字 / 3%），只记分：与源文连续重合 13 字（>12，疑似洗稿）",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "25 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "热点球评",
+      "topic_category": "转会官宣",
+      "column_id": "hot-take",
+      "column_name": "老六辣评",
+      "batch_name": "晨读",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "二级·突发",
+      "title_elements": {
+        "numbers": [],
+        "contrasts": [
+          "反差"
+        ],
+        "proper_nouns": [
+          "瓦伦西亚"
+        ],
+        "has_number": false,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 2
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 91,
+        "pass": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "R11数据:标题 26 字落在 21-30 回测最优区间"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 780,
+        "han_len": 502,
+        "paragraphs": 15,
+        "headings": 2,
+        "bullets": 0,
+        "quotes": 5,
+        "tags": [],
+        "cta": false,
+        "images": 3,
+        "degraded": []
+      },
+      "hot_event_key": "瓦伦西亚#transfer",
+      "hot_rank": 13,
+      "hot_source": "dongqiudi",
+      "hot_channel": "media"
+    },
+    {
+      "index": 2,
+      "title": "弗林斯79场排第2，德国中场榜马特乌斯压克罗斯居首",
+      "path": "/home/runner/work/_temp/output/2026-11-20/article-2-弗林斯79场排第-52643a.md",
+      "slug": "弗林斯79场排第-52643a",
+      "tags": [
+        "Torsten Frings",
+        "Lothar Matthaus",
+        "Toni Kroos",
+        "Bastian Schweinsteiger",
+        "Stefan Effenberg",
+        "Germany midfield ranking"
+      ],
+      "keywords": [
+        "Torsten Frings",
+        "Lothar Matthaus",
+        "Toni Kroos",
+        "Bastian Schweinsteiger",
+        "Stefan Effenberg",
+        "Germany midfield ranking"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-2-img-001.jpg",
+          "variant": "title",
+          "theme": "navy"
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "variant": "points",
+          "theme": "navy"
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "variant": "numbers",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-2-img-001.jpg",
+          "kind": "card:title",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "kind": "card:numbers",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "弗林斯盲排德国中场最佳：马特乌斯第一自己第二",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 0,
+        "ok": false,
+        "reasons": [
+          "[三要素] 标题信息量不足（三要素只命中 1/3，下限 2 项且须含专名）。缺：一处对比或落差（1平2负、22分压着对手、甩开一倍、从X到Y）；一个可检索的专名（球队/球员/教练/赛事/城市，不要写「这支豪门」）。只能用事实卡里已有的数字，不得编造。",
+          "[三要素] 三要素 1/3 未达下限（需 ≥2 项且含专名）",
+          "[三要素] 缺：对比、专名"
+        ],
+        "judged": true
+      },
+      "_anti_copy": null,
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "相似度 0 字 / 0%，未达重度线",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "21 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "排行榜",
+      "topic_category": "未分类",
+      "column_id": "chen-du-kuai-xun",
+      "column_name": "晨读快讯",
+      "batch_name": "晨读",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "三级·软性",
+      "title_elements": {
+        "numbers": [
+          "序次",
+          "度量"
+        ],
+        "contrasts": [],
+        "proper_nouns": [],
+        "has_number": true,
+        "has_contrast": false,
+        "has_proper": false,
+        "count": 1
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 0,
+        "pass": false,
+        "reasons": [
+          "[三要素] 标题信息量不足（三要素只命中 1/3，下限 2 项且须含专名）。缺：一处对比或落差（1平2负、22分压着对手",
+          "[三要素] 三要素 1/3 未达下限（需 ≥2 项且含专名）"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 716,
+        "han_len": 433,
+        "paragraphs": 11,
+        "headings": 2,
+        "bullets": 0,
+        "quotes": 6,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      }
+    }
+  ],
+  "topics": [
+    {
+      "title": "马卡：佐藤龙之介或将冬窗离队",
+      "angle": "热点事件「马卡：佐藤龙之介或将冬窗离队」，从球迷情绪与争议点切入",
+      "keywords": [],
+      "keywords_cn": [
+        "马卡：佐藤龙之介或将冬窗离队",
+        "瓦伦西亚"
+      ],
+      "content_type": "热点球评",
+      "score": 100,
+      "controversy_level": "high",
+      "why_pick": "媒体头条（dongqiudi）",
+      "_supply_layer": "二级·突发",
+      "_hot_event_key": "瓦伦西亚#transfer",
+      "_hot_rank": 13,
+      "_hot_source": "dongqiudi",
+      "_hot_channel": "media",
+      "_hot_providers": [
+        "dongqiudi"
+      ],
+      "_hot_support": [
+        "马卡：佐藤龙之介或将冬窗离队，瓦伦西亚计划将其外租西甲1 评"
+      ],
+      "_hot_support_raw": [
+        {
+          "title": "马卡：佐藤龙之介或将冬窗离队，瓦伦西亚计划将其外租西甲1 评",
+          "url": "https://www.dongqiudi.com/articles/6670402.html",
+          "source": "dongqiudi"
+        }
+      ]
+    },
+    {
+      "title": "弗林斯盲排德国中场最佳：马特乌斯第一自己第二",
+      "angle": "弗林斯盲排把自己放马特乌斯后面第二，还哭笑不得，德国老中场的人情味比排名真。",
+      "keywords": [
+        "Frings",
+        "Matthaus",
+        "Germany midfield"
+      ],
+      "keywords_cn": [
+        "弗林斯",
+        "马特乌斯",
+        "德国中场"
+      ],
+      "content_type": "排行榜",
+      "score": 85,
+      "controversy_level": "medium",
+      "target_emotion": "骄傲",
+      "resonance_angle": "名帅名宿沉浮",
+      "series_id": "无",
+      "why_pick": "德国名宿盲排自己第二20字",
+      "_category": "未分类",
+      "_column_id": "chen-du-kuai-xun",
+      "_column_name": "晨读快讯",
+      "_column_icon": "📰",
+      "_writing_style": "群聊播报体",
+      "_style_detail": "每条消息3-5句，格式为【事件概述】+一句话老六辣评。短句、快节奏、有信息量但不啰嗦。像一个人肉RSS但有态度。禁止长篇大论，每条独立成块。",
+      "_word_count_range": [
+        300,
+        500
+      ],
+      "_interaction_type": "prediction_poll",
+      "_interaction_guidance": "文末把判断抛给读者：'你觉得XX这笔转会能成吗？'，自己先给判断，再说理由。",
+      "_topic_domain": "足球快讯",
+      "_topic_guidance": "3-5条最新足球短消息加一句话辣评。可以是一条比赛结果+一条转会动态+一条花边/争议新闻。像微信群里的足球老哥早上发的第一条消息。每条独立成块，短句快节奏。",
+      "_data_source_hint": "match_preferred",
+      "_batch_name": "晨读",
+      "_batch_time": "08:00",
+      "_reader_scenario": "通勤/早咖啡，需要快速了解发生了什么",
+      "_overall_tone": "轻快、信息密度高、适合碎片化阅读",
+      "_rank_id": "topic-4"
+    }
+  ],
+  "data_sources": {},
+  "mix_guard": {
+    "window": [
+      "2026-11-07",
+      "2026-11-20"
+    ],
+    "n": 73,
+    "batch_n": 2,
+    "ok": false,
+    "table": {
+      "转会官宣": {
+        "count": 20,
+        "pct": 27.4,
+        "target": 30.0,
+        "over": false
+      },
+      "中国足球": {
+        "count": 14,
+        "pct": 19.2,
+        "target": 25.0,
+        "over": false
+      },
+      "冲突舆情": {
+        "count": 1,
+        "pct": 1.4,
+        "target": 20.0,
+        "over": false
+      },
+      "未分类": {
+        "count": 17,
+        "pct": 23.3,
+        "target": 15.0,
+        "over": true
+      },
+      "战报比分": {
+        "count": 21,
+        "pct": 28.8,
+        "target": 10.0,
+        "over": true
+      }
+    }
+  },
+  "mix_overshoot": [
+    {
+      "type": "战报比分",
+      "actual": 28.8,
+      "target": 10.0,
+      "delta": 18.8
+    },
+    {
+      "type": "未分类",
+      "actual": 23.3,
+      "target": 15.0,
+      "delta": 8.3
+    }
+  ],
+  "image_floor": {
+    "since": "2026-11-05",
+    "min_per_article": 3,
+    "articles_below": 0
+  },
+  "supply_layers": {
+    "total": 2,
+    "counts": {
+      "一级·确定性": 0,
+      "二级·突发": 1,
+      "三级·软性": 1
+    },
+    "ratios": {
+      "一级·确定性": 0.0,
+      "二级·突发": 50.0,
+      "三级·软性": 50.0
+    },
+    "targets": {
+      "一级·确定性": 30.0,
+      "二级·突发": 50.0,
+      "三级·软性": 20.0
+    },
+    "deviations": {
+      "一级·确定性": -30.0,
+      "二级·突发": 0.0,
+      "三级·软性": 30.0
+    },
+    "unclassified": 0,
+    "l3_breakdown": {
+      "data_driven": 1,
+      "other": 0,
+      "data_types": [
+        "数据对比",
+        "排行榜"
+      ]
+    }
+  },
+  "degrade_events": [
+    {
+      "环节": "赛程源",
+      "原因": "本批无可用赛程选题（源不可用或无匹配）",
+      "处置": "退化为纯新闻流驱动，选题池仅由事实卡装配",
+      "数量": 1
+    },
+    {
+      "环节": "反洗稿记分",
+      "原因": "与源文连续重合 13 字（>12，疑似洗稿）",
+      "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
+      "数量": 1
+    },
+    {
+      "环节": "标题评分记分",
+      "原因": "0分：[三要素] 标题信息量不足（三要素只命中 1/3，下限 2 项且须含专名）。缺：一处对比或落差（1平",
+      "处置": "不阻断发布，已尝试重拟与三要素兜底（v2 只记分）",
+      "数量": 1
+    },
+    {
+      "环节": "封面兜底",
+      "原因": "图源全断，改用标题数据卡",
+      "处置": "已配图发布；数据卡只兜底观感，不替代真实图",
+      "数量": 1
+    },
+    {
+      "环节": "配图补齐",
+      "原因": "真实图源只拿到 0 张",
+      "处置": "用 2 张原创信息图补到 3 张",
+      "数量": 1
+    },
+    {
+      "环节": "标题三要素",
+      "原因": "缺可用数字/专名，拼不出兜底标题",
+      "处置": "保留原题发布，metadata 记 title_elements.count",
+      "数量": 1
+    },
+    {
+      "环节": "封面兜底",
+      "原因": "图源全断，改用标题数据卡",
+      "处置": "已配图发布；数据卡只兜底观感，不替代真实图",
+      "数量": 1
+    },
+    {
+      "环节": "配图补齐",
+      "原因": "真实图源只拿到 0 张",
+      "处置": "用 2 张原创信息图补到 3 张",
+      "数量": 1
+    }
+  ],
+  "type": "match_analysis",
+  "quota": {
+    "batch": "morning",
+    "max_articles": 2,
+    "uplifted": false,
+    "reason": null,
+    "requested_reason": null,
+    "normal_max": 2,
+    "uplift_max": 3,
+    "weekly_limit": 2,
+    "weekly_used": 2,
+    "detail": "常态 2 篇",
+    "source": "策略手册 第五章 / 完善计划 12.1"
+  },
+  "ranker_mode": "rule",
+  "hot_topics": [
+    {
+      "title": "马卡：佐藤龙之介或将冬窗离队",
+      "rank": 13,
+      "source": "dongqiudi",
+      "channel": "media",
+      "event_key": "瓦伦西亚#transfer"
+    }
+  ],
+  "batch_mix": {
+    "slots": [
+      "main",
+      "data"
+    ],
+    "picked": [
+      {
+        "slot": "main",
+        "type": "热点球评",
+        "title": "马卡：佐藤龙之介或将冬窗离队"
+      },
+      {
+        "slot": "data",
+        "type": "排行榜",
+        "title": "弗林斯盲排德国中场最佳：马特乌斯第一自己第二"
+      }
+    ],
+    "degraded": [],
+    "skipped": [
+      {
+        "type": "转会资讯",
+        "title": "波切蒂诺曼联首训遭无人机偷拍，飞手竟称合法"
+      },
+      {
+        "type": "转会资讯",
+        "title": "弗兰克谈回归足坛：本可吃喝玩乐却重返马戏团"
+      },
+      {
+        "type": "八卦趣事",
+        "title": "前巴西女足国脚涉毒枭洗钱被捕，竟绰号女足内马尔"
+      },
+      {
+        "type": "八卦趣事",
+        "title": "没想到艾克森说中国特殊，归化时代竟只剩回忆"
+      }
+    ],
+    "day_counts": {},
+    "selected": 2,
+    "requested": 2
+  },
+  "batches_generated": [
+    "morning"
+  ],
+  "last_batch": "morning",
+  "last_updated": "2026-11-20 08:07:37"
+}
