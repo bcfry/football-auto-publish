@@ -1,8 +1,8 @@
 {
   "version": 2,
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 07:57:32",
-  "batch_filter": "morning",
+  "generated_at": "2026-11-20 10:07:08",
+  "batch_filter": "evening",
   "counts": {
     "total": 2,
     "published": 2,
@@ -44,19 +44,19 @@
   },
   "records": [
     {
-      "title": "穆勒 vs 赫内斯，原来拜仁慕尼黑顶层位置这么难进",
+      "title": "苏比门迪12场380分钟，阿森纳竟不低价甩卖",
       "slug": "",
-      "batch_name": "晨读",
-      "platform_id": "7710158810375193123",
+      "batch_name": "晚间",
+      "platform_id": "7710192361600041487",
       "reason": "",
       "images": 3,
       "status": "published"
     },
     {
-      "title": "西班牙U17前25占25人，中国U17原来差在这",
+      "title": "没想到苏比门迪7000万欧，阿森纳竟然不甩卖",
       "slug": "",
-      "batch_name": "晨读",
-      "platform_id": "7710159224680202787",
+      "batch_name": "晚间",
+      "platform_id": "7710192704642089506",
       "reason": "",
       "images": 3,
       "status": "published"

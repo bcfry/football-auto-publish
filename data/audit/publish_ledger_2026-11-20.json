@@ -1,15 +1,16 @@
 {
   "version": 2,
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 07:57:32",
-  "batch_filter": "morning+noon",
+  "generated_at": "2026-11-20 10:07:08",
+  "batch_filter": "evening+morning+noon",
   "batches": [
+    "evening",
     "morning",
     "noon"
   ],
   "counts": {
-    "total": 4,
-    "published": 4,
+    "total": 6,
+    "published": 6,
     "failed": 0,
     "skipped_prediction": 0,
     "skipped_already_published": 0,
@@ -17,16 +18,16 @@
     "published_without_cover": 0,
     "drafts": 2,
     "dropped_compliance": 0,
-    "lost_upstream": -2,
+    "lost_upstream": -4,
     "published_with_title_gate_issue": 0
   },
   "identity": {
-    "n_records": 4,
-    "known_status": 4,
+    "n_records": 6,
+    "known_status": 6,
     "unaccounted_status": 0,
     "records_identity_ok": true,
     "cover_ok": false,
-    "lost_upstream": -2,
+    "lost_upstream": -4,
     "scope": "day_cumulative",
     "available": true,
     "reason": ""
@@ -37,6 +38,26 @@
     "missing_meta": false
   },
   "records": [
+    {
+      "title": "苏比门迪12场380分钟，阿森纳竟不低价甩卖",
+      "slug": "",
+      "batch_name": "晚间",
+      "platform_id": "7710192361600041487",
+      "reason": "",
+      "images": 3,
+      "status": "published",
+      "batch": "evening"
+    },
+    {
+      "title": "没想到苏比门迪7000万欧，阿森纳竟然不甩卖",
+      "slug": "",
+      "batch_name": "晚间",
+      "platform_id": "7710192704642089506",
+      "reason": "",
+      "images": 3,
+      "status": "published",
+      "batch": "evening"
+    },
     {
       "title": "穆勒 vs 赫内斯，原来拜仁慕尼黑顶层位置这么难进",
       "slug": "",
