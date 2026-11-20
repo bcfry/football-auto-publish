@@ -800,14 +800,16 @@ def _read_works_list(page, timeout_ms: int, settle_ms: int) -> str:
 
 
 def verify_published_in_list(page, title: str, *, timeout_ms: int = 15000,
-                             settle_ms: int = 1500, confirm_rounds: int = 2) -> dict:
+                             settle_ms: int = 1500, confirm_rounds: int = 3) -> dict:
     """发布确认后回查作品管理页，确认标题是否真的出现在已发布列表。
 
     只读：只打开列表页、读文本，不点任何修改按钮。
     返回 {"result": VERIFY_*, "title": ..., "evidence": ...}。
 
-    刚发布完列表可能有同步延迟，故 not_found 需连续 confirm_rounds 次确认
-    （中间等待），避免把「还没刷出来」误判成「没发布」。
+    刚发布完列表有分钟级同步延迟（2026-11-20 实证：点确认后 4 秒回查把两篇
+    真发布的稿误判成 not_found 跳过）。故：轮数默认 3、轮间等 8 秒，总观察窗
+    ≈20 秒，尽可能等到作品刷出；即便如此仍查不到也不再硬判失败——调用方对
+    not_found 采取「保守放行 + 醒目警告」，宁可漏报假成功，不可错杀真发布。
     """
     out = {"result": VERIFY_UNKNOWN, "title": title, "evidence": ""}
     seen_loaded = False
@@ -823,7 +825,7 @@ def verify_published_in_list(page, title: str, *, timeout_ms: int = 15000,
             return out
         out["evidence"] = f"第{rnd+1}轮作品列表已加载但未找到标题"
         if rnd + 1 < confirm_rounds:
-            page.wait_for_timeout(2500)          # 等同步后再确认一次
+            page.wait_for_timeout(8000)          # 等同步后再确认（列表延迟可达分钟级）
     if seen_loaded:
         out["result"] = VERIFY_NOT_FOUND
     else:
@@ -1300,24 +1302,28 @@ def publish_article(page, article, date_str, draft_mode=False):
                 if draft_saved:
                     print(f"  ℹ️ 草稿/预览响应 code:0（不作为发布成功依据，需回查作品列表）")
 
-                # 回查作品列表：唯一能区分「真发布」和「只存草稿」的可靠信号。
-                # 三态处理：published → 成功；not_found → 失败（草稿/未发布）；
-                # unknown → 页面没加载出来，不敢判失败误伤已发布稿，按草稿阶段
-                #           code:0 保守放行并打醒目警告（宁可漏报，不可错杀已发布）。
+                # 回查作品列表：published → 硬成功；not_found / unknown → 保守放行 + 醒目警告。
+                # 2026-11-20 教训：点确认后 4 秒回查，把两篇**真已发布**的稿判成 not_found
+                # 并跳过，造成内容白发（用户后台确认已发出）。头条作品列表同步延迟可达分钟级，
+                # 短窗口内 not_found 无法区分「草稿没发」和「已发但没刷出」——此时错杀的代价
+                # （白发选题/台账漏记/可能重复补发）远大于漏报的代价（台账虚高，可人工复核）。
+                # 故 not_found 不再 return ok=False，改为放行 + warn + 保留 verify 状态留痕。
                 verify = verify_published_in_list(page, title)
                 vres = verify["result"]
                 print(f"  🔍 发布终判(回查作品列表): {vres} — {verify['evidence']}")
                 if vres == VERIFY_PUBLISHED:
                     return {"ok": True, "pgc_id": _first_pgc_id(publish_results),
                             "verify": vres}
+                # not_found / unknown 一律保守放行，但打醒目警告供人工/T+1 复核。
+                _why = verify["evidence"]
+                print(f"  ⚠️ 回查={vres}（{_why}）：保守按成功处理，请 T+1 按标题复核后台是否真发布")
                 if vres == VERIFY_NOT_FOUND:
-                    debug_dump_page(page, f"not_published_{article['index']}")
-                    return {"ok": False,
-                            "error": "确认后回查作品列表未找到该标题（疑似草稿/未发布）: " + verify["evidence"],
-                            "pgc_id": _first_pgc_id(publish_results), "verify": vres}
-                # unknown：保守放行（保留旧行为），但明确告警，人工可据此复核
+                    debug_dump_page(page, f"not_found_keep_{article['index']}")
+                    return {"ok": True, "pgc_id": _first_pgc_id(publish_results),
+                            "verify": vres,
+                            "warn": f"回查未找到标题（{_why}），保守放行待复核"}
+                # unknown：保留旧行为，草稿阶段 code:0 时放行
                 if draft_saved:
-                    print(f"  ⚠️ 回查不确定 + 草稿阶段 code:0：保守按成功处理，请人工复核是否真发布")
                     return {"ok": True, "pgc_id": _first_pgc_id(publish_results),
                             "verify": vres, "warn": "回查不确定，未证实真发布"}
 
