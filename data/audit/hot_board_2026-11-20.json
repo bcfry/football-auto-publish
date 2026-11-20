@@ -1,7 +1,7 @@
 {
   "version": 1,
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 15:42:24",
+  "generated_at": "2026-11-20 15:52:42",
   "board_total": 131,
   "diag": {
     "providers": {
@@ -10,21 +10,21 @@
         "count": 50,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 1.6
+        "elapsed_s": 1.38
       },
       "weibo": {
         "status": "ok",
         "count": 51,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 1.05
+        "elapsed_s": 1.12
       },
       "dongqiudi": {
         "status": "ok",
         "count": 30,
         "kind": "media",
         "tier": "P0",
-        "elapsed_s": 0.89
+        "elapsed_s": 0.46
       },
       "tieba": {
         "status": "ok",
@@ -82,21 +82,21 @@
   ],
   "candidates": [
     {
-      "word": "罗体：罗马冬窗优先租借+买断，关注吉滕斯等英超失意边锋英超意甲",
-      "rank": 3,
+      "word": "穆勒：未来一切开放，从退役到再签五年合同都有可能德甲五洲1 评",
+      "rank": 8,
       "heat": 0,
       "source": "dongqiudi",
       "entities": [
-        "罗马"
+        "穆勒"
       ],
       "support": [
         {
-          "title": "罗体：罗马冬窗优先租借+买断，关注吉滕斯等英超失意边锋英超意甲",
-          "url": "https://www.dongqiudi.com/articles/6671608.html",
+          "title": "穆勒：未来一切开放，从退役到再签五年合同都有可能德甲五洲1 评",
+          "url": "https://www.dongqiudi.com/articles/6671632.html",
           "source": "dongqiudi"
         }
       ],
-      "event_key": "罗马#transfer",
+      "event_key": "穆勒#retire",
       "providers": [
         "dongqiudi"
       ],
