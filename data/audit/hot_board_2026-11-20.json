@@ -1,7 +1,7 @@
 {
   "version": 1,
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 15:52:42",
+  "generated_at": "2026-11-20 18:03:12",
   "board_total": 131,
   "diag": {
     "providers": {
@@ -10,28 +10,28 @@
         "count": 50,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 1.38
+        "elapsed_s": 1.5
       },
       "weibo": {
         "status": "ok",
         "count": 51,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 1.12
+        "elapsed_s": 0.91
       },
       "dongqiudi": {
         "status": "ok",
         "count": 30,
         "kind": "media",
         "tier": "P0",
-        "elapsed_s": 0.46
+        "elapsed_s": 0.32
       },
       "tieba": {
         "status": "ok",
         "count": 30,
         "kind": "ugc",
         "tier": "P0",
-        "elapsed_s": 1.62
+        "elapsed_s": 1.15
       },
       "sina_sports": {
         "status": "disabled",
@@ -65,8 +65,14 @@
       }
     },
     "errors": [],
-    "stale_dropped": 0,
-    "unknown_time": 8
+    "stale_dropped": 1,
+    "unknown_time": 8,
+    "stale_samples": [
+      {
+        "title": "【中文播报】一月自由球员",
+        "age_h": 39.7
+      }
+    ]
   },
   "football_hits": [
     {
@@ -82,21 +88,22 @@
   ],
   "candidates": [
     {
-      "word": "穆勒：未来一切开放，从退役到再签五年合同都有可能德甲五洲1 评",
-      "rank": 8,
+      "word": "法媒：阿森纳为苏比门迪标价8000万欧以上，马竞只想租借英超西甲",
+      "rank": 3,
       "heat": 0,
       "source": "dongqiudi",
       "entities": [
-        "穆勒"
+        "阿森纳",
+        "马德里竞技"
       ],
       "support": [
         {
-          "title": "穆勒：未来一切开放，从退役到再签五年合同都有可能德甲五洲1 评",
-          "url": "https://www.dongqiudi.com/articles/6671632.html",
+          "title": "法媒：阿森纳为苏比门迪标价8000万欧以上，马竞只想租借英超西甲",
+          "url": "https://www.dongqiudi.com/articles/6672104.html",
           "source": "dongqiudi"
         }
       ],
-      "event_key": "穆勒#retire",
+      "event_key": "阿森纳|马德里竞技#transfer",
       "providers": [
         "dongqiudi"
       ],

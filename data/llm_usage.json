@@ -217,9 +217,9 @@
     "free_quota_total_tokens": 1000000
   },
   "hy4": {
-    "total_tokens": 27609,
-    "prompt_tokens": 22683,
-    "completion_tokens": 4926,
+    "total_tokens": 43788,
+    "prompt_tokens": 36882,
+    "completion_tokens": 6906,
     "free_quota_pct": 100.0,
     "free_quota_total_tokens": 10000000,
     "free_quota_expires_at": "2027-11-09 11:41:10",
