@@ -1,7 +1,7 @@
 {
   "date": "2026-11-20",
-  "generated_at": "2026-11-20T07:53:27.169530",
-  "total_articles": 8,
+  "generated_at": "2026-11-20T10:03:50.025163",
+  "total_articles": 10,
   "articles": [
     {
       "index": 1,
@@ -2396,83 +2396,692 @@
         "images": 3,
         "degraded": []
       }
+    },
+    {
+      "index": 1,
+      "title": "苏比门迪12场380分钟，阿森纳竟不低价甩卖",
+      "path": "/home/runner/work/_temp/output/2026-11-20/article-1-苏比门迪12场3-ad6a10.md",
+      "slug": "苏比门迪12场3-ad6a10",
+      "tags": [
+        "Arsenal",
+        "Martin Zubimendi",
+        "Real Sociedad",
+        "Atletico Madrid",
+        "Footmercato",
+        "Cadena SER",
+        "Bruno Guimaraes",
+        "Lewis-Skelly",
+        "transfer",
+        "Ligue 1"
+      ],
+      "keywords": [
+        "Arsenal",
+        "Martin Zubimendi",
+        "Real Sociedad",
+        "Atletico Madrid",
+        "Footmercato",
+        "Cadena SER",
+        "Bruno Guimaraes",
+        "Lewis-Skelly",
+        "transfer",
+        "Ligue 1"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-1-img-001.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_261012/6acbc981326ae_1280.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-20/6affec69a637dnative.htm",
+            "query": "阿森纳",
+            "alt": "小雷谈双红会：利物浦今年主场战绩不好，对阵曼城和阿森纳都输了"
+          },
+          "width": 1200,
+          "height": 793
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_261106/202611061034417559_1280.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-20/6aff96608b9d2native.htm",
+            "query": "阿森纳",
+            "alt": "波帅开门黑？天空预测：双红会利物浦主场2-0曼联！曼城枪手拿3分"
+          },
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_261108/6aef5c022b61c_1280.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-20/6afff46131171native.htm",
+            "query": "阿森纳",
+            "alt": "TA：若想阻止阿森纳本赛季卫冕英超冠军，得想办法阻止他们先进球"
+          },
+          "width": 1200,
+          "height": 799
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "法媒：阿森纳为苏比门迪标价8000万欧以上",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 77,
+        "ok": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作",
+          "R11数据:标题 22 字落在 21-30 回测最优区间"
+        ],
+        "judged": true
+      },
+      "_anti_copy": {
+        "ok": false,
+        "issues": [
+          "与源文连续重合 13 字（>12，疑似洗稿）"
+        ]
+      },
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "轻度相似（13 字 / 1%），只记分：与源文连续重合 13 字（>12，疑似洗稿）",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "26 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "热点球评",
+      "topic_category": "未分类",
+      "column_id": "hot-take",
+      "column_name": "老六辣评",
+      "batch_name": "晚间",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "二级·突发",
+      "title_elements": {
+        "numbers": [
+          "度量"
+        ],
+        "contrasts": [
+          "反差"
+        ],
+        "proper_nouns": [
+          "阿森纳"
+        ],
+        "has_number": true,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 3
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 77,
+        "pass": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 1410,
+        "han_len": 998,
+        "paragraphs": 15,
+        "headings": 3,
+        "bullets": 0,
+        "quotes": 4,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      },
+      "hot_event_key": "阿森纳|马德里竞技#transfer",
+      "hot_rank": 3,
+      "hot_source": "dongqiudi",
+      "hot_channel": "media"
+    },
+    {
+      "index": 2,
+      "title": "没想到苏比门迪7000万欧，阿森纳竟然不甩卖",
+      "path": "/home/runner/work/_temp/output/2026-11-20/article-2-没想到苏比门迪7-750adb.md",
+      "slug": "没想到苏比门迪7-750adb",
+      "tags": [
+        "Arsenal",
+        "Martin Zubimendi",
+        "Real Sociedad",
+        "Atletico Madrid",
+        "Footmercato",
+        "Cadena SER",
+        "transfer"
+      ],
+      "keywords": [
+        "Arsenal",
+        "Martin Zubimendi",
+        "Real Sociedad",
+        "Atletico Madrid",
+        "Footmercato",
+        "Cadena SER",
+        "transfer"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-2-img-001.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/news/day_261120/202611201753331948.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-20/6b0018887f1c8native.htm",
+            "query": "马竞",
+            "alt": "马德里竞技官推晒2026-27赛季全家福：西蒙尼、恩里克·塞雷索C位"
+          },
+          "width": 1200,
+          "height": 799
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/news/day_261119/202611192316293423.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-19/6aff12a6de122native.htm",
+            "query": "马竞",
+            "alt": "马竞祝贺李刚仁：连续第二年获评亚足联年度最佳海外球员，恭喜！"
+          },
+          "width": 750,
+          "height": 936
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_260921/6ab01d9abe006_1280.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-19/6afed02eed6e2native.htm",
+            "query": "马竞",
+            "alt": "记者：戴维参加马竞今日训练，罗梅罗、卢克曼和普比尔缺席"
+          },
+          "width": 1200,
+          "height": 799
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "8000万欧压着租借，马竞竟只想租苏比门迪",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 89,
+        "ok": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作",
+          "R11数据:标题含悬念词「没想到」，回测点击率 +87%",
+          "R11数据:标题 22 字落在 21-30 回测最优区间"
+        ],
+        "judged": true
+      },
+      "_anti_copy": null,
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "相似度 0 字 / 1%，未达重度线",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "29 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "数据对比",
+      "topic_category": "未分类",
+      "column_id": "world-cup-daily",
+      "column_name": "世界杯日报",
+      "batch_name": "晚间",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "三级·软性",
+      "title_elements": {
+        "numbers": [
+          "度量"
+        ],
+        "contrasts": [
+          "反差"
+        ],
+        "proper_nouns": [
+          "阿森纳"
+        ],
+        "has_number": true,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 3
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 89,
+        "pass": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 1315,
+        "han_len": 906,
+        "paragraphs": 18,
+        "headings": 3,
+        "bullets": 0,
+        "quotes": 8,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      }
     }
   ],
   "topics": [
     {
-      "title": "穆勒：未来一切开放",
-      "angle": "热点事件「穆勒：未来一切开放」，从球迷情绪与争议点切入",
+      "title": "法媒：阿森纳为苏比门迪标价8000万欧以上",
+      "angle": "热点事件「法媒：阿森纳为苏比门迪标价8000万欧以上」，从球迷情绪与争议点切入",
       "keywords": [],
       "keywords_cn": [
-        "穆勒：未来一切开放"
+        "法媒：阿森纳为苏比门迪标价8000万欧以上",
+        "马德里竞技"
       ],
       "content_type": "热点球评",
       "score": 100,
       "controversy_level": "high",
       "why_pick": "媒体头条（dongqiudi）",
       "_supply_layer": "二级·突发",
-      "_hot_event_key": "穆勒#retire",
-      "_hot_rank": 8,
+      "_hot_event_key": "阿森纳|马德里竞技#transfer",
+      "_hot_rank": 3,
       "_hot_source": "dongqiudi",
       "_hot_channel": "media",
       "_hot_providers": [
         "dongqiudi"
       ],
       "_hot_support": [
-        "穆勒：未来一切开放，从退役到再签五年合同都有可能德甲五洲1 评"
+        "法媒：阿森纳为苏比门迪标价8000万欧以上，马竞只想租借英超西甲"
       ],
       "_hot_support_raw": [
         {
-          "title": "穆勒：未来一切开放，从退役到再签五年合同都有可能德甲五洲1 评",
-          "url": "https://www.dongqiudi.com/articles/6671632.html",
+          "title": "法媒：阿森纳为苏比门迪标价8000万欧以上，马竞只想租借英超西甲",
+          "url": "https://www.dongqiudi.com/articles/6672104.html",
           "source": "dongqiudi"
         }
       ]
     },
     {
-      "title": "西班牙4人破100万欧，800万欧压住国少身价",
-      "angle": "这是数据对比，不是给小孩贴标签：西班牙U17有4人身价100万欧以上、最高800万欧，对照中国U17今晚22点碰面，聊的是青训投入和平台差距，不吹前途。",
+      "title": "8000万欧压着租借，马竞竟只想租苏比门迪",
+      "angle": "用阿森纳标价8000万欧以上、马竞只想租借这组反差，聊豪门后腰市场的价码和算盘。立场很明确：这不是谁抠门，是西甲和英超钱包厚度不在一个桌面。",
       "keywords": [
-        "Spain U17",
-        "China U17",
-        "market value",
-        "8 million euros",
-        "4 players"
+        "Martin Zubimendi",
+        "Atletico Madrid",
+        "Arsenal",
+        "8000m euros",
+        "loan"
       ],
       "keywords_cn": [
-        "西班牙U17",
-        "中国U17",
-        "4人身价100万欧以上",
-        "最高800万欧",
-        "22点直播"
+        "苏比门迪",
+        "马德里竞技",
+        "阿森纳",
+        "8000万欧",
+        "租借"
       ],
       "content_type": "数据对比",
-      "score": 86,
-      "controversy_level": "medium",
+      "score": 91,
+      "controversy_level": "high",
       "target_emotion": "好奇",
-      "resonance_angle": "国足情结",
+      "resonance_angle": "名帅名宿沉浮",
       "series_id": "无",
-      "why_pick": "4人与800万欧可核对对比",
-      "_category": "未分类",
-      "_column_id": "hua-ti-lei-tai",
-      "_column_name": "话题擂台",
-      "_column_icon": "🥊",
-      "_writing_style": "烧烤摊辩论体",
-      "_style_detail": "先摆出争议话题（一句话定调）→ 正方观点（2-3个论据）→ 反方观点（2-3个论据）→ 老六亮明态度（核心论据）→ 邀请读者说出自己的判断。语气像烧烤摊上和朋友抬杠，可以激动但不说脏话。必须给双方都有说话的机会，但最后必须有你自己的态度。",
+      "why_pick": "转会价码反差大，数字可核对",
+      "_category": "转会官宣",
+      "_column_id": "world-cup-daily",
+      "_column_name": "世界杯日报",
+      "_column_icon": "📰",
+      "_writing_style": "快讯集锦体",
+      "_style_detail": "像在看赛后集锦的文字版。按比赛分块，每块2-3句话+一个记忆点。快节奏有信息量有观点。开头一句话总结今天世界杯的主旋律。非世界杯期间可改为当日俱乐部比赛集锦。",
       "_word_count_range": [
         400,
         600
       ],
-      "_interaction_type": "side_taking_vote",
-      "_interaction_guidance": "文末把判断抛给读者：'你更认哪一边？我先说我的判断和理由——…'",
-      "_topic_domain": "足球争议话题",
-      "_topic_guidance": "一个有争议的足球话题，列出正反两方观点，最后给出老六的判断和理由。话题要能让读者看完后立刻想去评论区表态。适合的话题：'XX该不该下课''XX转会到底值不值''VAR到底该不该废除'等。",
-      "_data_source_hint": "gzh_preferred",
-      "_batch_name": "晨读",
-      "_batch_time": "08:00",
-      "_reader_scenario": "通勤/早咖啡，需要快速了解发生了什么",
-      "_overall_tone": "轻快、信息密度高、适合碎片化阅读",
-      "_rank_id": "topic-3"
+      "_interaction_type": "prediction_poll",
+      "_interaction_guidance": "文末预测明天比赛：'明天XX对XX，你觉得谁能赢？评论区说说你的判断，我先来——…'",
+      "_topic_domain": "世界杯日报",
+      "_topic_guidance": "当天世界杯比赛的高光时刻、冷门结果、名场面汇总。像赛后集锦的文字版，给下班没看球的读者补课。覆盖当天世界杯关键节点，每场2-3句话抓重点，开头一句话总结今天的'主旋律'。",
+      "_data_source_hint": "gzh_only",
+      "_batch_name": "晚间",
+      "_batch_time": "18:00",
+      "_reader_scenario": "下班通勤/晚饭后刷手机，需要爽感和谈资",
+      "_overall_tone": "有观点、有情绪、适合截图转发和评论区讨论",
+      "_rank_id": "topic-0"
     }
   ],
   "data_sources": {},
@@ -2481,19 +3090,19 @@
       "2026-11-07",
       "2026-11-20"
     ],
-    "n": 75,
+    "n": 77,
     "batch_n": 2,
     "ok": false,
     "table": {
       "转会官宣": {
         "count": 20,
-        "pct": 26.7,
+        "pct": 26.0,
         "target": 30.0,
         "over": false
       },
       "中国足球": {
         "count": 14,
-        "pct": 18.7,
+        "pct": 18.2,
         "target": 25.0,
         "over": false
       },
@@ -2504,14 +3113,14 @@
         "over": false
       },
       "未分类": {
-        "count": 18,
-        "pct": 24.0,
+        "count": 20,
+        "pct": 26.0,
         "target": 15.0,
         "over": true
       },
       "战报比分": {
         "count": 22,
-        "pct": 29.3,
+        "pct": 28.6,
         "target": 10.0,
         "over": true
       }
@@ -2520,15 +3129,15 @@
   "mix_overshoot": [
     {
       "type": "战报比分",
-      "actual": 29.3,
+      "actual": 28.6,
       "target": 10.0,
-      "delta": 19.3
+      "delta": 18.6
     },
     {
       "type": "未分类",
-      "actual": 24.0,
+      "actual": 26.0,
       "target": 15.0,
-      "delta": 9.0
+      "delta": 11.0
     }
   ],
   "image_floor": {
@@ -2577,81 +3186,33 @@
     },
     {
       "环节": "反洗稿记分",
-      "原因": "事实点数少于最强源文（13 < 17）",
+      "原因": "与源文连续重合 13 字（>12，疑似洗稿）",
       "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
-      "数量": 1
-    },
-    {
-      "环节": "标题评分记分",
-      "原因": "0分：[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球",
-      "处置": "不阻断发布，已尝试重拟与三要素兜底（v2 只记分）",
-      "数量": 1
-    },
-    {
-      "环节": "标题评分记分",
-      "原因": "0分：[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球",
-      "处置": "不阻断发布，已尝试重拟与三要素兜底（v2 只记分）",
-      "数量": 1
-    },
-    {
-      "环节": "标题三要素",
-      "原因": "缺可用数字/专名，拼不出兜底标题",
-      "处置": "保留原题发布，metadata 记 title_elements.count",
-      "数量": 1
-    },
-    {
-      "环节": "封面兜底",
-      "原因": "图源全断，改用标题数据卡",
-      "处置": "已配图发布；数据卡只兜底观感，不替代真实图",
-      "数量": 1
-    },
-    {
-      "环节": "配图补齐",
-      "原因": "真实图源只拿到 0 张",
-      "处置": "用 2 张原创信息图补到 3 张",
-      "数量": 1
-    },
-    {
-      "环节": "标题三要素",
-      "原因": "缺可用数字/专名，拼不出兜底标题",
-      "处置": "保留原题发布，metadata 记 title_elements.count",
-      "数量": 1
-    },
-    {
-      "环节": "封面兜底",
-      "原因": "图源全断，改用标题数据卡",
-      "处置": "已配图发布；数据卡只兜底观感，不替代真实图",
-      "数量": 1
-    },
-    {
-      "环节": "配图补齐",
-      "原因": "真实图源只拿到 0 张",
-      "处置": "用 2 张原创信息图补到 3 张",
       "数量": 1
     }
   ],
   "type": "match_analysis",
   "quota": {
-    "batch": "morning",
+    "batch": "evening",
     "max_articles": 2,
     "uplifted": false,
     "reason": null,
     "requested_reason": null,
     "normal_max": 2,
-    "uplift_max": 3,
+    "uplift_max": 2,
     "weekly_limit": 2,
     "weekly_used": 2,
-    "detail": "常态 2 篇",
+    "detail": "常态 2 篇（该批次不加发）",
     "source": "策略手册 第五章 / 完善计划 12.1"
   },
-  "ranker_mode": "llm",
+  "ranker_mode": "rule",
   "hot_topics": [
     {
-      "title": "穆勒：未来一切开放",
-      "rank": 8,
+      "title": "法媒：阿森纳为苏比门迪标价8000万欧以上",
+      "rank": 3,
       "source": "dongqiudi",
       "channel": "media",
-      "event_key": "穆勒#retire"
+      "event_key": "阿森纳|马德里竞技#transfer"
     }
   ],
   "batch_mix": {
@@ -2663,42 +3224,34 @@
       {
         "slot": "main",
         "type": "热点球评",
-        "title": "穆勒：未来一切开放"
+        "title": "法媒：阿森纳为苏比门迪标价8000万欧以上"
       },
       {
         "slot": "data",
         "type": "数据对比",
-        "title": "西班牙4人破100万欧，800万欧压住国少身价"
+        "title": "8000万欧压着租借，马竞竟只想租苏比门迪"
       }
     ],
     "degraded": [],
     "skipped": [
       {
-        "type": "转会资讯",
-        "title": "奥乌苏续约到2031年，尤文21岁中场竟先上岸"
-      },
-      {
-        "type": "转会资讯",
-        "title": "图拉姆要涨薪，国米续约谈判先从钱开口"
-      },
-      {
-        "type": "热点球评",
-        "title": "21年后再上CCTV5，国少22点碰西班牙竟不是陪读"
+        "type": "八卦趣事",
+        "title": "没想到迈达纳告别河南，3年中超竟像电影散场"
       }
     ],
     "day_counts": {
-      "热点球评": 4,
+      "热点球评": 5,
       "排行榜": 1,
-      "数据对比": 1
+      "数据对比": 2
     },
     "selected": 2,
     "requested": 2
   },
   "batches_generated": [
-    "morning"
+    "evening"
   ],
-  "last_batch": "morning",
-  "last_updated": "2026-11-20 15:53:27",
+  "last_batch": "evening",
+  "last_updated": "2026-11-20 18:03:50",
   "batches_completed": [
     "morning",
     "noon"
