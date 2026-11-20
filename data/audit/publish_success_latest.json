@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20 10:20",
+  "generated_at": "2026-11-20 12:10",
   "window_days": 7,
   "ok": false,
   "checks": [
@@ -7,12 +7,12 @@
       "item": "发布成功率（近 7 天）",
       "ok": true,
       "pending": false,
-      "published": 35,
+      "published": 37,
       "failed": 0,
       "rate": 100.0,
       "detail": [
-        "✅ 近 7 天：成功 35 / 尝试 35 篇，成功率 100.0%（下限 85%）",
-        "台账覆盖 6 天，缺 1 天（2026-11-20）"
+        "✅ 近 7 天：成功 37 / 尝试 37 篇，成功率 100.0%（下限 85%）",
+        "台账覆盖 7 天，缺 0 天"
       ]
     },
     {
@@ -34,11 +34,10 @@
     },
     {
       "item": "发布台账覆盖",
-      "ok": false,
+      "ok": true,
       "advisory": true,
       "detail": [
-        "近 7 天有台账 6 天，缺 1 天（2026-11-20）",
-        "缺台账的两种可能：① 该日没跑批次；② 跑了但发布前就中断；③ 台账未提交。三者处置不同，需看当日 Actions 结论"
+        "近 7 天有台账 7 天"
       ]
     },
     {
@@ -46,9 +45,9 @@
       "ok": true,
       "advisory": true,
       "no_cover": 0,
-      "published": 35,
+      "published": 37,
       "detail": [
-        "已发布 35 篇，其中零配图 0 篇（0.0%）",
+        "已发布 37 篇，其中零配图 0 篇（0.0%）",
         "判定权在 verify_cover_coverage（上限 5%）；本项只报数不回滚"
       ]
     },
@@ -56,13 +55,13 @@
       "item": "成稿口径成功率（近 7 天，只报数）",
       "ok": true,
       "advisory": true,
-      "draft_rate": 242.9,
-      "drafts": 6,
+      "draft_rate": 211.1,
+      "drafts": 8,
       "dropped_compliance": 1,
       "lost_upstream": -11,
-      "published": 17,
+      "published": 19,
       "detail": [
-        "成稿 6 篇 + 合规剔除 1 篇 − 按设计跳过 0 篇 = 应发 7 篇；实发 17 篇 → **242.9%**",
+        "成稿 8 篇 + 合规剔除 1 篇 − 按设计跳过 0 篇 = 应发 9 篇；实发 19 篇 → **211.1%**",
         "缺口拆解：成稿在但台账无记录 -11 篇、合规剔除 1 篇（后者是规则挡下的稿子，不是发失败）",
         "对照 A 项（尝试口径）只算 published/(published+failed)，两数并列看；把取证缺口读成发失败，会去修发布器——修错了地方"
       ]
@@ -73,9 +72,9 @@
       "pending": false,
       "partition_bad": 0,
       "cover_bad": 3,
-      "cover_judged": 3,
+      "cover_judged": 4,
       "detail": [
-        "✅ I1 记录分区成立：6 天，counts.total = 记录数 = 已登记 status 之和",
+        "✅ I1 记录分区成立：7 天，counts.total = 记录数 = 已登记 status 之和",
         "❌ I2 成稿覆盖不成立 3 天：",
         "   · 2026-11-17：成稿 2 篇 < 台账记录 6 条",
         "   · 2026-11-18：成稿 1 篇 < 台账记录 5 条",

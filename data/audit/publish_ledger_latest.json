@@ -1,24 +1,24 @@
 {
   "version": 2,
-  "date": "2026-11-19",
-  "generated_at": "2026-11-19 04:07:11",
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20 04:10:53",
   "batch_filter": "noon",
   "counts": {
-    "total": 3,
-    "published": 3,
+    "total": 2,
+    "published": 2,
     "failed": 0,
     "skipped_prediction": 0,
     "skipped_already_published": 0,
     "published_without_id": 0,
     "published_without_cover": 0,
-    "drafts": 3,
+    "drafts": 2,
     "dropped_compliance": 0,
     "lost_upstream": null,
     "published_with_title_gate_issue": 0
   },
   "identity": {
-    "n_records": 3,
-    "known_status": 3,
+    "n_records": 2,
+    "known_status": 2,
     "unaccounted_status": 0,
     "records_identity_ok": true,
     "cover_ok": null,
@@ -31,41 +31,32 @@
     "available": true,
     "reason": "",
     "scope": "day_cumulative",
-    "path": "/home/runner/work/_temp/output/2026-11-19/metadata.json",
-    "drafts": 3,
+    "path": "/home/runner/work/_temp/output/2026-11-20/metadata.json",
+    "drafts": 2,
     "dropped_compliance": 0,
-    "draft_total": 3,
+    "draft_total": 2,
     "title_gate_blocked_published": 0
   },
   "platform_id_binding": {
-    "bound": 3,
+    "bound": 2,
     "unmatched": [],
     "missing_meta": false
   },
   "records": [
     {
-      "title": "范志毅 vs 郑智：两人拿亚足联年度最佳竟隔了12年",
+      "title": "没想到穆西亚拉2027解约金条款在，拜仁还敢加压力逼他留",
       "slug": "",
       "batch_name": "午间",
-      "platform_id": "7709728437853749798",
+      "platform_id": "7710100581603492406",
       "reason": "",
       "images": 3,
       "status": "published"
     },
     {
-      "title": "西班牙U17五人身价压着中国U17三人，帅惟浩22.5万欧领衔",
+      "title": "U17国足22年重返决赛，竟在决赛2-3输给日本队",
       "slug": "",
       "batch_name": "午间",
-      "platform_id": "7709728740011475465",
-      "reason": "",
-      "images": 3,
-      "status": "published"
-    },
-    {
-      "title": "万项踢青年欧冠还要交手西班牙队，中国U17这路子真不一样",
-      "slug": "",
-      "batch_name": "午间",
-      "platform_id": "7709729035387011635",
+      "platform_id": "7710100967366197814",
       "reason": "",
       "images": 3,
       "status": "published"
