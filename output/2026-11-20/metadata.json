@@ -1,7 +1,7 @@
 {
   "date": "2026-11-20",
-  "generated_at": "2026-11-20T07:47:19.446312",
-  "total_articles": 6,
+  "generated_at": "2026-11-20T07:53:27.169530",
+  "total_articles": 8,
   "articles": [
     {
       "index": 1,
@@ -1795,61 +1795,664 @@
         "images": 3,
         "degraded": []
       }
+    },
+    {
+      "index": 1,
+      "title": "穆勒 vs 赫内斯，原来拜仁慕尼黑顶层位置这么难进",
+      "path": "/home/runner/work/_temp/output/2026-11-20/article-1-穆勒vs赫内斯原-1dfe57.md",
+      "slug": "穆勒vs赫内斯原-1dfe57",
+      "tags": [
+        "Thomas Mueller",
+        "Vancouver Whitecaps",
+        "Bayern Munich",
+        "2014 World Cup",
+        "Uli Hoeness"
+      ],
+      "keywords": [
+        "Thomas Mueller",
+        "Vancouver Whitecaps",
+        "Bayern Munich",
+        "2014 World Cup",
+        "Uli Hoeness"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-1-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-1-img-001.jpg",
+          "variant": "title",
+          "theme": "navy"
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "variant": "points",
+          "theme": "navy"
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "variant": "numbers",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-1-img-001.jpg",
+          "kind": "card:title",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "kind": "card:numbers",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "穆勒：未来一切开放",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 0,
+        "ok": false,
+        "reasons": [
+          "[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球队/球员/教练/赛事/城市，不要写「这支豪门」）。只能用事实卡里已有的数字，不得编造。",
+          "[三要素] 三要素 2/3 未达下限（需 ≥2 项且含专名）",
+          "[三要素] 缺：专名"
+        ],
+        "judged": true
+      },
+      "_anti_copy": null,
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "相似度 0 字 / 1%，未达重度线",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "34 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "热点球评",
+      "topic_category": "未分类",
+      "column_id": "hot-take",
+      "column_name": "老六辣评",
+      "batch_name": "晨读",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "二级·突发",
+      "title_elements": {
+        "numbers": [],
+        "contrasts": [
+          "明示对比",
+          "反差"
+        ],
+        "proper_nouns": [
+          "拜仁慕尼黑"
+        ],
+        "has_number": false,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 2
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 89,
+        "pass": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 1682,
+        "han_len": 1243,
+        "paragraphs": 23,
+        "headings": 3,
+        "bullets": 0,
+        "quotes": 12,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      },
+      "hot_event_key": "穆勒#retire",
+      "hot_rank": 8,
+      "hot_source": "dongqiudi",
+      "hot_channel": "media"
+    },
+    {
+      "index": 2,
+      "title": "西班牙U17前25占25人，中国U17原来差在这",
+      "path": "/home/runner/work/_temp/output/2026-11-20/article-2-西班牙U17前2-a617e4.md",
+      "slug": "西班牙U17前2-a617e4",
+      "tags": [
+        "China U17",
+        "Spain U17",
+        "market value",
+        "top 25",
+        "22:00",
+        "zhibo8"
+      ],
+      "keywords": [
+        "China U17",
+        "Spain U17",
+        "market value",
+        "top 25",
+        "22:00",
+        "zhibo8"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-20/images/article-2-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-2-img-001.jpg",
+          "variant": "title",
+          "theme": "navy"
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "variant": "points",
+          "theme": "navy"
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "variant": "numbers",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-2-img-001.jpg",
+          "kind": "card:title",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "kind": "card:numbers",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "西班牙4人破100万欧，800万欧压住国少身价",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 0,
+        "ok": false,
+        "reasons": [
+          "[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球队/球员/教练/赛事/城市，不要写「这支豪门」）。只能用事实卡里已有的数字，不得编造。",
+          "[三要素] 三要素 2/3 未达下限（需 ≥2 项且含专名）",
+          "[三要素] 缺：专名"
+        ],
+        "judged": true
+      },
+      "_anti_copy": {
+        "ok": false,
+        "issues": [
+          "事实点数少于最强源文（13 < 17）"
+        ]
+      },
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "轻度相似（0 字 / 0%），只记分：事实点数少于最强源文（13 < 17）",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "28 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "数据对比",
+      "topic_category": "未分类",
+      "column_id": "hua-ti-lei-tai",
+      "column_name": "话题擂台",
+      "batch_name": "晨读",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "三级·软性",
+      "title_elements": {
+        "numbers": [
+          "赛制",
+          "度量"
+        ],
+        "contrasts": [
+          "反差"
+        ],
+        "proper_nouns": [],
+        "has_number": true,
+        "has_contrast": true,
+        "has_proper": false,
+        "count": 2
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 0,
+        "pass": false,
+        "reasons": [
+          "[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球队/球员/教练/赛事",
+          "[三要素] 三要素 2/3 未达下限（需 ≥2 项且含专名）"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 1294,
+        "han_len": 897,
+        "paragraphs": 17,
+        "headings": 3,
+        "bullets": 0,
+        "quotes": 6,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      }
     }
   ],
   "topics": [
     {
-      "title": "罗体：罗马冬窗优先租借+买断",
-      "angle": "热点事件「罗体：罗马冬窗优先租借+买断」，从球迷情绪与争议点切入",
+      "title": "穆勒：未来一切开放",
+      "angle": "热点事件「穆勒：未来一切开放」，从球迷情绪与争议点切入",
       "keywords": [],
       "keywords_cn": [
-        "罗体：罗马冬窗优先租借+买断"
+        "穆勒：未来一切开放"
       ],
       "content_type": "热点球评",
       "score": 100,
       "controversy_level": "high",
       "why_pick": "媒体头条（dongqiudi）",
       "_supply_layer": "二级·突发",
-      "_hot_event_key": "罗马#transfer",
-      "_hot_rank": 3,
+      "_hot_event_key": "穆勒#retire",
+      "_hot_rank": 8,
       "_hot_source": "dongqiudi",
       "_hot_channel": "media",
       "_hot_providers": [
         "dongqiudi"
       ],
       "_hot_support": [
-        "罗体：罗马冬窗优先租借+买断，关注吉滕斯等英超失意边锋英超意甲"
+        "穆勒：未来一切开放，从退役到再签五年合同都有可能德甲五洲1 评"
       ],
       "_hot_support_raw": [
         {
-          "title": "罗体：罗马冬窗优先租借+买断，关注吉滕斯等英超失意边锋英超意甲",
-          "url": "https://www.dongqiudi.com/articles/6671608.html",
+          "title": "穆勒：未来一切开放，从退役到再签五年合同都有可能德甲五洲1 评",
+          "url": "https://www.dongqiudi.com/articles/6671632.html",
           "source": "dongqiudi"
         }
       ]
     },
     {
-      "title": "西班牙U17身价最高800万欧，中国U17首发身价竟然差这么多",
-      "angle": "用两队U17球员具体身价数字做对比，不是空谈差距，而是让老球迷看懂青训投入的真实落差在哪。",
+      "title": "西班牙4人破100万欧，800万欧压住国少身价",
+      "angle": "这是数据对比，不是给小孩贴标签：西班牙U17有4人身价100万欧以上、最高800万欧，对照中国U17今晚22点碰面，聊的是青训投入和平台差距，不吹前途。",
       "keywords": [
         "Spain U17",
         "China U17",
-        "transfer value",
-        "U17 World Cup"
+        "market value",
+        "8 million euros",
+        "4 players"
       ],
       "keywords_cn": [
         "西班牙U17",
         "中国U17",
-        "身价",
-        "世少赛"
+        "4人身价100万欧以上",
+        "最高800万欧",
+        "22点直播"
       ],
       "content_type": "数据对比",
-      "score": 91,
+      "score": 86,
       "controversy_level": "medium",
       "target_emotion": "好奇",
       "resonance_angle": "国足情结",
       "series_id": "无",
-      "why_pick": "两队具体身价数字对比，信息增量足",
+      "why_pick": "4人与800万欧可核对对比",
       "_category": "未分类",
       "_column_id": "hua-ti-lei-tai",
       "_column_name": "话题擂台",
@@ -1869,7 +2472,7 @@
       "_batch_time": "08:00",
       "_reader_scenario": "通勤/早咖啡，需要快速了解发生了什么",
       "_overall_tone": "轻快、信息密度高、适合碎片化阅读",
-      "_rank_id": "topic-1"
+      "_rank_id": "topic-3"
     }
   ],
   "data_sources": {},
@@ -1883,8 +2486,8 @@
     "ok": false,
     "table": {
       "转会官宣": {
-        "count": 21,
-        "pct": 28.0,
+        "count": 20,
+        "pct": 26.7,
         "target": 30.0,
         "over": false
       },
@@ -1901,8 +2504,8 @@
         "over": false
       },
       "未分类": {
-        "count": 17,
-        "pct": 22.7,
+        "count": 18,
+        "pct": 24.0,
         "target": 15.0,
         "over": true
       },
@@ -1923,9 +2526,9 @@
     },
     {
       "type": "未分类",
-      "actual": 22.7,
+      "actual": 24.0,
       "target": 15.0,
-      "delta": 7.7
+      "delta": 9.0
     }
   ],
   "image_floor": {
@@ -1974,20 +2577,38 @@
     },
     {
       "环节": "反洗稿记分",
-      "原因": "与源文连续重合 13 字（>12，疑似洗稿）；事实点数少于最强源文（10 < 17）",
+      "原因": "事实点数少于最强源文（13 < 17）",
       "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
       "数量": 1
     },
     {
       "环节": "标题评分记分",
-      "原因": "0分：[三要素] 标题信息量不足（三要素只命中 1/3，下限 2 项且须含专名）。缺：一处对比或落差（1平",
+      "原因": "0分：[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球",
       "处置": "不阻断发布，已尝试重拟与三要素兜底（v2 只记分）",
       "数量": 1
     },
     {
-      "环节": "反洗稿记分",
-      "原因": "事实点数少于最强源文（25 < 26）",
-      "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
+      "环节": "标题评分记分",
+      "原因": "0分：[三要素] 标题信息量不足（三要素只命中 2/3，下限 2 项且须含专名）。缺：一个可检索的专名（球",
+      "处置": "不阻断发布，已尝试重拟与三要素兜底（v2 只记分）",
+      "数量": 1
+    },
+    {
+      "环节": "标题三要素",
+      "原因": "缺可用数字/专名，拼不出兜底标题",
+      "处置": "保留原题发布，metadata 记 title_elements.count",
+      "数量": 1
+    },
+    {
+      "环节": "封面兜底",
+      "原因": "图源全断，改用标题数据卡",
+      "处置": "已配图发布；数据卡只兜底观感，不替代真实图",
+      "数量": 1
+    },
+    {
+      "环节": "配图补齐",
+      "原因": "真实图源只拿到 0 张",
+      "处置": "用 2 张原创信息图补到 3 张",
       "数量": 1
     },
     {
@@ -2023,14 +2644,14 @@
     "detail": "常态 2 篇",
     "source": "策略手册 第五章 / 完善计划 12.1"
   },
-  "ranker_mode": "rule",
+  "ranker_mode": "llm",
   "hot_topics": [
     {
-      "title": "罗体：罗马冬窗优先租借+买断",
-      "rank": 3,
+      "title": "穆勒：未来一切开放",
+      "rank": 8,
       "source": "dongqiudi",
       "channel": "media",
-      "event_key": "罗马#transfer"
+      "event_key": "穆勒#retire"
     }
   ],
   "batch_mix": {
@@ -2042,24 +2663,33 @@
       {
         "slot": "main",
         "type": "热点球评",
-        "title": "罗体：罗马冬窗优先租借+买断"
+        "title": "穆勒：未来一切开放"
       },
       {
         "slot": "data",
         "type": "数据对比",
-        "title": "西班牙U17身价最高800万欧，中国U17首发身价竟然差"
+        "title": "西班牙4人破100万欧，800万欧压住国少身价"
       }
     ],
     "degraded": [],
     "skipped": [
       {
+        "type": "转会资讯",
+        "title": "奥乌苏续约到2031年，尤文21岁中场竟先上岸"
+      },
+      {
+        "type": "转会资讯",
+        "title": "图拉姆要涨薪，国米续约谈判先从钱开口"
+      },
+      {
         "type": "热点球评",
-        "title": "没想到U17国足时隔21年再战世少赛，CCTV5今晚22"
+        "title": "21年后再上CCTV5，国少22点碰西班牙竟不是陪读"
       }
     ],
     "day_counts": {
-      "热点球评": 3,
-      "排行榜": 1
+      "热点球评": 4,
+      "排行榜": 1,
+      "数据对比": 1
     },
     "selected": 2,
     "requested": 2
@@ -2068,9 +2698,9 @@
     "morning"
   ],
   "last_batch": "morning",
-  "last_updated": "2026-11-20 15:50:50",
+  "last_updated": "2026-11-20 15:53:27",
   "batches_completed": [
-    "noon",
-    "morning"
+    "morning",
+    "noon"
   ]
 }
