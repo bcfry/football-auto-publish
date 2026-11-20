@@ -1,7 +1,7 @@
 {
   "version": 1,
   "date": "2026-11-20",
-  "generated_at": "2026-11-20 12:06:26",
+  "generated_at": "2026-11-20 15:42:24",
   "board_total": 131,
   "diag": {
     "providers": {
@@ -10,28 +10,28 @@
         "count": 50,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 1.67
+        "elapsed_s": 1.6
       },
       "weibo": {
         "status": "ok",
         "count": 51,
         "kind": "board",
         "tier": "P0",
-        "elapsed_s": 1.04
+        "elapsed_s": 1.05
       },
       "dongqiudi": {
         "status": "ok",
         "count": 30,
         "kind": "media",
         "tier": "P0",
-        "elapsed_s": 0.38
+        "elapsed_s": 0.89
       },
       "tieba": {
         "status": "ok",
         "count": 30,
         "kind": "ugc",
         "tier": "P0",
-        "elapsed_s": 1.33
+        "elapsed_s": 1.62
       },
       "sina_sports": {
         "status": "disabled",
@@ -71,8 +71,8 @@
   "football_hits": [
     {
       "word": "传Viper1500万高薪续约",
-      "rank": 5,
-      "heat": 814918,
+      "rank": 8,
+      "heat": 858705,
       "source": "tieba",
       "kind": "ugc",
       "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=28369991&amp;topic_name=%E4%BC%A0Viper1500%E4%B8%87%E9%AB%98%E8%96%AA%E7%BB%AD%E7%BA%A6",
@@ -82,22 +82,21 @@
   ],
   "candidates": [
     {
-      "word": "拜仁希望穆西亚拉表现匹配2500万欧年薪，球员暂无离队计划德甲1 评",
-      "rank": 5,
+      "word": "罗体：罗马冬窗优先租借+买断，关注吉滕斯等英超失意边锋英超意甲",
+      "rank": 3,
       "heat": 0,
       "source": "dongqiudi",
       "entities": [
-        "穆西亚拉",
-        "拜仁"
+        "罗马"
       ],
       "support": [
         {
-          "title": "拜仁希望穆西亚拉表现匹配2500万欧年薪，球员暂无离队计划德甲1 评",
-          "url": "https://www.dongqiudi.com/articles/6670925.html",
+          "title": "罗体：罗马冬窗优先租借+买断，关注吉滕斯等英超失意边锋英超意甲",
+          "url": "https://www.dongqiudi.com/articles/6671608.html",
           "source": "dongqiudi"
         }
       ],
-      "event_key": "拜仁|穆西亚拉#transfer",
+      "event_key": "罗马#transfer",
       "providers": [
         "dongqiudi"
       ],
