@@ -23,12 +23,13 @@ class FakePage:
         self.texts = list(texts)
         self.i = 0
         self.gotos = []
+        self.waits = []
 
     def goto(self, url, **kw):
         self.gotos.append(url)
 
     def wait_for_timeout(self, ms):
-        pass
+        self.waits.append(ms)
 
     def locator(self, selector):
         page = self
@@ -123,6 +124,34 @@ class TestVerifyPublished(unittest.TestCase):
         publisher.verify_published_in_list(pg, self.TITLE)
         self.assertTrue(pg.gotos)
         self.assertIn("graphic/articles", pg.gotos[0])
+
+
+class TestSyncDelayFix(unittest.TestCase):
+    """2026-11-20 误杀修复：回查窗口足够长 + 延迟刷出仍能判成功。"""
+
+    TITLE = "佐藤龙之介2026当选却要冬窗走，瓦伦西亚外租找下家"
+
+    def test_default_rounds_extended(self):
+        # 默认轮数 ≥3（原来 2 轮太短，4 秒窗口把真发布误判 not_found）
+        import inspect
+        sig = inspect.signature(publisher.verify_published_in_list)
+        self.assertGreaterEqual(sig.parameters["confirm_rounds"].default, 3)
+
+    def test_round_gap_extended(self):
+        # 轮间等待 ≥ 8 秒（原来 2.5 秒），给头条列表同步留时间
+        loaded = "共 7 条内容 | 安切洛蒂带巴西 | 已发布"
+        pg = FakePage([loaded, loaded, loaded])
+        publisher.verify_published_in_list(pg, self.TITLE, confirm_rounds=3)
+        self.assertTrue(pg.waits)
+        self.assertGreaterEqual(min(pg.waits), 8000)
+
+    def test_appears_on_third_round(self):
+        # 第 1、2 轮没刷出，第 3 轮出现 → published（模拟分钟级同步延迟）
+        loaded_no = "共 7 条内容 | 安切洛蒂带巴西 | 已发布"
+        loaded_yes = "共 7 条内容 | " + self.TITLE + " | 已发布"
+        pg = FakePage([loaded_no, loaded_no, loaded_yes])
+        r = publisher.verify_published_in_list(pg, self.TITLE, confirm_rounds=3)
+        self.assertEqual(r["result"], publisher.VERIFY_PUBLISHED)
 
 
 if __name__ == "__main__":
