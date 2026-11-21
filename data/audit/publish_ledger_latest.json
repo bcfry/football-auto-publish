@@ -1,8 +1,8 @@
 {
   "version": 2,
   "date": "2026-11-21",
-  "generated_at": "2026-11-21 00:08:34",
-  "batch_filter": "morning",
+  "generated_at": "2026-11-21 04:10:09",
+  "batch_filter": "noon",
   "counts": {
     "total": 2,
     "published": 2,
@@ -44,19 +44,19 @@
   },
   "records": [
     {
-      "title": "没想到拜仁1-1科隆，凯恩第20分钟伤退",
+      "title": "亨德森对话切尔西，原来全围绕足球",
       "slug": "",
-      "batch_name": "晨读",
-      "platform_id": "7710409215835144744",
+      "batch_name": "午间",
+      "platform_id": "7710471451232469540",
       "reason": "",
       "images": 3,
       "status": "published"
     },
     {
-      "title": "凯恩第20分钟伤退，拜仁1-1科隆竟只拿22分",
+      "title": "U17国足0-5西班牙U17，21年等待原来这么扎心",
       "slug": "",
-      "batch_name": "晨读",
-      "platform_id": "7710409602700968463",
+      "batch_name": "午间",
+      "platform_id": "7710471852036063807",
       "reason": "",
       "images": 3,
       "status": "published"
