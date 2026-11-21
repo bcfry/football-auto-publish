@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
-  "generated_at": "2026-11-21T04:06:48.575193",
-  "total_articles": 4,
+  "generated_at": "2026-11-21T10:09:49.321780",
+  "total_articles": 6,
   "articles": [
     {
       "index": 1,
@@ -1232,80 +1232,697 @@
         "images": 3,
         "degraded": []
       }
+    },
+    {
+      "index": 1,
+      "title": "国足出线53.7%对0.1%夺冠，原来差在这",
+      "path": "/home/runner/work/_temp/output/2026-11-21/article-1-国足出线537对-028b4b.md",
+      "slug": "国足出线537对-028b4b",
+      "tags": [
+        "AFC Asian Cup 2027",
+        "China national football team",
+        "Japan",
+        "probability",
+        "group stage"
+      ],
+      "keywords": [
+        "AFC Asian Cup 2027",
+        "China national football team",
+        "Japan",
+        "probability",
+        "group stage"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-21/images/article-1-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-21/images/article-1-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-21/images/article-1-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-1-img-001.jpg",
+          "variant": "title",
+          "theme": "navy"
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "variant": "points",
+          "theme": "navy"
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "variant": "numbers",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-1-img-001.jpg",
+          "kind": "card:title",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "kind": "card:numbers",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "没想到国足夺冠0.1%，出线53.7%却压着日本33.2%",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 89,
+        "ok": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作",
+          "R11数据:标题含悬念词「原来」，回测点击率 +87%",
+          "R11数据:标题 22 字落在 21-30 回测最优区间"
+        ],
+        "judged": true
+      },
+      "_anti_copy": {
+        "ok": false,
+        "issues": [
+          "与源文连续重合 52 字（>12，疑似洗稿）",
+          "8-gram 重合率 26.7%（>15%，疑似洗稿）",
+          "事实点数少于最强源文（42 < 123）"
+        ]
+      },
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "轻度相似（52 字 / 27%），只记分：与源文连续重合 52 字（>12，疑似洗稿）；8-gram 重合率 26.7%（>15%，疑似洗稿）",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "35 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "数据对比",
+      "topic_category": "战报比分",
+      "column_id": "laoliu-hot-take",
+      "column_name": "老六辣评",
+      "batch_name": "晚间",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "三级·软性",
+      "title_elements": {
+        "numbers": [
+          "度量"
+        ],
+        "contrasts": [
+          "反差"
+        ],
+        "proper_nouns": [
+          "国足"
+        ],
+        "has_number": true,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 3
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 89,
+        "pass": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 1358,
+        "han_len": 791,
+        "paragraphs": 24,
+        "headings": 3,
+        "bullets": 0,
+        "quotes": 5,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      }
+    },
+    {
+      "index": 2,
+      "title": "蓉城选帅推荐名单：郑智李霄鹏之外，哈维尔竟也被推荐",
+      "path": "/home/runner/work/_temp/output/2026-11-21/article-2-蓉城选帅推荐名单-1337e2.md",
+      "slug": "蓉城选帅推荐名单-1337e2",
+      "tags": [
+        "Romelu Lukaku",
+        "Belgium national team",
+        "Mark van Bommel",
+        "Roger Lukaku",
+        "retirement"
+      ],
+      "keywords": [
+        "Romelu Lukaku",
+        "Belgium national team",
+        "Mark van Bommel",
+        "Roger Lukaku",
+        "retirement"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-21/images/article-2-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-21/images/article-2-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-21/images/article-2-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-2-img-003.jpg",
+          "variant": "points",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-2-img-001.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_261111/6af41dda4165b.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-21/6b0143257093enative.htm",
+            "query": "郑智",
+            "alt": "丰臻：蓉城选帅难决，除了郑智李霄鹏，前海港主帅哈维尔也被推荐"
+          },
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_230616/648c2621a3ea8.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-19/6afe614f3f60dnative.htm",
+            "query": "郑智",
+            "alt": "中国球员两次获得亚足联年度最佳男足球员：01年范志毅、13年郑智"
+          },
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": false,
+          "contradictions": [],
+          "suspicious": [],
+          "missing": [
+            "事实卡为空"
+          ],
+          "coverage": 0.0,
+          "legacy_issues": [],
+          "subject": "郑智李霄鹏之外，哈维尔竟也被推荐给蓉城选帅",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 71,
+        "ok": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作",
+          "与板块[转会资讯]关键词不匹配",
+          "R11数据:标题 25 字落在 21-30 回测最优区间"
+        ],
+        "judged": true
+      },
+      "_anti_copy": {
+        "ok": false,
+        "issues": [
+          "事实点数少于最强源文（29 < 127）"
+        ]
+      },
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 9,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "not_judged",
+            "detail": "闸门判 judged=False（空事实卡，未判定 ≠ 通过）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "轻度相似（0 字 / 1%），只记分：事实点数少于最强源文（29 < 127）",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "21 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "转会资讯",
+      "topic_category": "转会官宣",
+      "column_id": "world-cup-daily",
+      "column_name": "世界杯日报",
+      "batch_name": "晚间",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "二级·突发",
+      "title_elements": {
+        "numbers": [],
+        "contrasts": [
+          "反差"
+        ],
+        "proper_nouns": [
+          "郑智"
+        ],
+        "has_number": false,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 2
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [],
+        "anchor_repick": false,
+        "score": 71,
+        "pass": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 1119,
+        "han_len": 769,
+        "paragraphs": 11,
+        "headings": 2,
+        "bullets": 0,
+        "quotes": 5,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      }
     }
   ],
   "topics": [
     {
-      "title": "亨德森转会切尔西前与球队的对话“全围绕足球”足球",
-      "angle": "热点事件「亨德森转会切尔西前与球队的对话“全围绕足球”足球」，从球迷情绪与争议点切入",
-      "keywords": [],
-      "keywords_cn": [
-        "亨德森转会切尔西前与球队的对话“全围绕足球”足球"
-      ],
-      "content_type": "热点球评",
-      "score": 100,
-      "controversy_level": "high",
-      "why_pick": "媒体头条（dongqiudi）",
-      "_supply_layer": "二级·突发",
-      "_hot_event_key": "切尔西#transfer",
-      "_hot_rank": 4,
-      "_hot_source": "dongqiudi",
-      "_hot_channel": "media",
-      "_hot_providers": [
-        "dongqiudi"
-      ],
-      "_hot_support": [
-        "亨德森转会切尔西前与球队的对话“全围绕足球”足球"
-      ],
-      "_hot_support_raw": [
-        {
-          "title": "亨德森转会切尔西前与球队的对话“全围绕足球”足球",
-          "url": "https://www.dongqiudi.com/articles/6675790.html",
-          "source": "dongqiudi"
-        }
-      ]
-    },
-    {
-      "title": "没想到U17国足0-5西班牙，3次首战未胜却2进决赛",
-      "angle": "别只盯着0-5挨骂，真正扎心的是世界杯舞台把青训差距摊开；但中国U系列今年3次大赛首战未胜、此前2次均进决赛，这条线值得老球迷接着看后两场怎么调整。态度很明确：输得难受，别把孩子一棍子打死。",
+      "title": "没想到国足夺冠0.1%，出线53.7%却压着日本33.2%",
+      "angle": "从亚洲杯夺冠概率切入：日本33.2%领跑，国足0.1%夺冠、53.7%出线，数字反差够扎心。老球迷最懂，骂归骂，真到算概率还是忍不住点开看一眼。",
       "keywords": [
-        "China U17",
-        "Spain U17",
-        "U series",
-        "0-5"
+        "Asian Cup probability",
+        "China national team",
+        "Japan 33.2%",
+        "53.7% qualification"
       ],
       "keywords_cn": [
-        "U17国足",
-        "西班牙U17",
-        "3次大赛首战未胜",
-        "2次进决赛"
+        "亚洲杯夺冠概率",
+        "国足出线概率",
+        "日本领跑",
+        "0.1%夺冠"
       ],
-      "content_type": "热点球评",
-      "score": 96,
+      "content_type": "数据对比",
+      "score": 91,
       "controversy_level": "high",
-      "target_emotion": "愤怒",
+      "target_emotion": "好奇",
       "resonance_angle": "国足情结",
       "series_id": "guozu-chronicle",
-      "why_pick": "国少惨败有争议有情怀",
+      "why_pick": "国足概率反差强，老球迷必聊",
       "_category": "战报比分",
-      "_column_id": "wu-jian-kuai-xun",
-      "_column_name": "午间快讯",
-      "_column_icon": "⚡",
-      "_writing_style": "群聊播报体",
-      "_style_detail": "3-5条消息，每条3-5句。格式：【事件概述】+ 一句话老六辣评。短句、快节奏、有信息量但不啰嗦。每条独立成块。",
+      "_column_id": "laoliu-hot-take",
+      "_column_name": "老六辣评",
+      "_column_icon": "🔥",
+      "_writing_style": "脱口秀吐槽体",
+      "_style_detail": "像足球吐槽大会的单人版。开篇直接开火，用事实当子弹。可以有情绪但不能只有情绪——每句吐槽后面跟一句事实依据。节奏像脱口秀，有铺垫有爆点。结尾让人想截图转发。",
       "_word_count_range": [
-        300,
-        500
+        400,
+        600
+      ],
+      "_interaction_type": "side_taking_vote",
+      "_interaction_guidance": "文末邀请反驳：'同意我的，说说你的理由；觉得我在瞎说的，更要说。评论区见。'",
+      "_topic_domain": "足球热点辣评",
+      "_topic_guidance": "当天最热的一个足球话题，给出老六的犀利观点。可以怼人、可以拆台、可以力排众议。但要基于事实，怼得有道理。适合：某队的迷之操作、某球员的争议表现、某教练的神奇换人、某媒体的双标报道。",
+      "_data_source_hint": "gzh_only",
+      "_batch_name": "晚间",
+      "_batch_time": "18:00",
+      "_reader_scenario": "下班通勤/晚饭后刷手机，需要爽感和谈资",
+      "_overall_tone": "有观点、有情绪、适合截图转发和评论区讨论",
+      "_rank_id": "topic-1"
+    },
+    {
+      "title": "郑智李霄鹏之外，哈维尔竟也被推荐给蓉城选帅",
+      "angle": "不写空泛选帅盘点，重点放在蓉城难决背后：郑智、李霄鹏之外，前海港主帅哈维尔也被推荐。名帅本土教头摆一桌，评论区肯定吵谁更适合扛事。",
+      "keywords": [
+        "Chengdu Rongcheng",
+        "Zheng Zhi",
+        "Li Xiaopeng",
+        "Javier Pereira",
+        "head coach search"
+      ],
+      "keywords_cn": [
+        "蓉城选帅",
+        "郑智",
+        "李霄鹏",
+        "哈维尔",
+        "前海港主帅"
+      ],
+      "content_type": "转会资讯",
+      "score": 84,
+      "controversy_level": "medium",
+      "target_emotion": "好奇",
+      "resonance_angle": "名帅名宿沉浮",
+      "series_id": "无",
+      "why_pick": "本土名宿与外教抉择有争议",
+      "_category": "转会官宣",
+      "_column_id": "world-cup-daily",
+      "_column_name": "世界杯日报",
+      "_column_icon": "📰",
+      "_writing_style": "快讯集锦体",
+      "_style_detail": "像在看赛后集锦的文字版。按比赛分块，每块2-3句话+一个记忆点。快节奏有信息量有观点。开头一句话总结今天世界杯的主旋律。非世界杯期间可改为当日俱乐部比赛集锦。",
+      "_word_count_range": [
+        400,
+        600
       ],
       "_interaction_type": "prediction_poll",
-      "_interaction_guidance": "文末列三个选项让读者挑：'今天上午最劲爆的消息是？A.XX B.XX C.XX，我选A，你呢？'",
-      "_topic_domain": "足球快讯",
-      "_topic_guidance": "上午最新足球消息精选：比赛结果、转会动态、突发事件。用短句快节奏呈现，每条独立成块，每条包含事件概述+一句话老六辣评。像中午在食堂打开手机扫一眼就知道上午发生了什么。",
-      "_data_source_hint": "match_preferred",
-      "_batch_name": "午间",
-      "_batch_time": "12:00",
-      "_reader_scenario": "午休刷手机，需要快速了解上午发生了什么",
-      "_overall_tone": "信息密度高、快节奏、适合午休碎片阅读",
+      "_interaction_guidance": "文末预测明天比赛：'明天XX对XX，你觉得谁能赢？评论区说说你的判断，我先来——…'",
+      "_topic_domain": "世界杯日报",
+      "_topic_guidance": "当天世界杯比赛的高光时刻、冷门结果、名场面汇总。像赛后集锦的文字版，给下班没看球的读者补课。覆盖当天世界杯关键节点，每场2-3句话抓重点，开头一句话总结今天的'主旋律'。",
+      "_data_source_hint": "gzh_only",
+      "_batch_name": "晚间",
+      "_batch_time": "18:00",
+      "_reader_scenario": "下班通勤/晚饭后刷手机，需要爽感和谈资",
+      "_overall_tone": "有观点、有情绪、适合截图转发和评论区讨论",
       "_rank_id": "topic-0"
     }
   ],
@@ -1315,19 +1932,19 @@
       "2026-11-08",
       "2026-11-21"
     ],
-    "n": 77,
+    "n": 79,
     "batch_n": 2,
     "ok": false,
     "table": {
       "转会官宣": {
-        "count": 19,
-        "pct": 24.7,
+        "count": 20,
+        "pct": 25.3,
         "target": 30.0,
         "over": false
       },
       "中国足球": {
         "count": 13,
-        "pct": 16.9,
+        "pct": 16.5,
         "target": 25.0,
         "over": false
       },
@@ -1339,13 +1956,13 @@
       },
       "未分类": {
         "count": 20,
-        "pct": 26.0,
+        "pct": 25.3,
         "target": 15.0,
         "over": true
       },
       "战报比分": {
-        "count": 24,
-        "pct": 31.2,
+        "count": 25,
+        "pct": 31.6,
         "target": 10.0,
         "over": true
       }
@@ -1354,15 +1971,15 @@
   "mix_overshoot": [
     {
       "type": "战报比分",
-      "actual": 31.2,
+      "actual": 31.6,
       "target": 10.0,
-      "delta": 21.2
+      "delta": 21.6
     },
     {
       "type": "未分类",
-      "actual": 26.0,
+      "actual": 25.3,
       "target": 15.0,
-      "delta": 11.0
+      "delta": 10.3
     }
   ],
   "image_floor": {
@@ -1374,13 +1991,13 @@
     "total": 2,
     "counts": {
       "一级·确定性": 0,
-      "二级·突发": 2,
-      "三级·软性": 0
+      "二级·突发": 1,
+      "三级·软性": 1
     },
     "ratios": {
       "一级·确定性": 0.0,
-      "二级·突发": 100.0,
-      "三级·软性": 0.0
+      "二级·突发": 50.0,
+      "三级·软性": 50.0
     },
     "targets": {
       "一级·确定性": 30.0,
@@ -1389,12 +2006,12 @@
     },
     "deviations": {
       "一级·确定性": -30.0,
-      "二级·突发": 50.0,
-      "三级·软性": -20.0
+      "二级·突发": 0.0,
+      "三级·软性": 30.0
     },
     "unclassified": 0,
     "l3_breakdown": {
-      "data_driven": 0,
+      "data_driven": 1,
       "other": 0,
       "data_types": [
         "数据对比",
@@ -1411,14 +2028,14 @@
     },
     {
       "环节": "反洗稿记分",
-      "原因": "与源文连续重合 13 字（>12，疑似洗稿）",
+      "原因": "与源文连续重合 52 字（>12，疑似洗稿）；8-gram 重合率 26.7%（>15%，疑似洗稿）；事实点数少于最强源",
       "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
       "数量": 1
     },
     {
-      "环节": "配图补齐",
-      "原因": "真实图源只拿到 2 张",
-      "处置": "用 1 张原创信息图补到 3 张",
+      "环节": "反洗稿记分",
+      "原因": "事实点数少于最强源文（29 < 127）",
+      "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
       "数量": 1
     },
     {
@@ -1432,32 +2049,29 @@
       "原因": "真实图源只拿到 0 张",
       "处置": "用 2 张原创信息图补到 3 张",
       "数量": 1
+    },
+    {
+      "环节": "配图补齐",
+      "原因": "真实图源只拿到 2 张",
+      "处置": "用 1 张原创信息图补到 3 张",
+      "数量": 1
     }
   ],
   "type": "match_analysis",
   "quota": {
-    "batch": "noon",
+    "batch": "evening",
     "max_articles": 2,
     "uplifted": false,
     "reason": null,
     "requested_reason": null,
     "normal_max": 2,
-    "uplift_max": 3,
+    "uplift_max": 2,
     "weekly_limit": 2,
     "weekly_used": 2,
-    "detail": "常态 2 篇",
+    "detail": "常态 2 篇（该批次不加发）",
     "source": "策略手册 第五章 / 完善计划 12.1"
   },
   "ranker_mode": "rule",
-  "hot_topics": [
-    {
-      "title": "亨德森转会切尔西前与球队的对话“全围绕足球”足球",
-      "rank": 4,
-      "source": "dongqiudi",
-      "channel": "media",
-      "event_key": "切尔西#transfer"
-    }
-  ],
   "batch_mix": {
     "slots": [
       "main",
@@ -1466,31 +2080,32 @@
     "picked": [
       {
         "slot": "main",
-        "type": "热点球评",
-        "title": "亨德森转会切尔西前与球队的对话“全围绕足球”足球"
+        "type": "数据对比",
+        "title": "没想到国足夺冠0.1%，出线53.7%却压着日本33.2"
       },
       {
-        "slot": "data",
-        "type": "热点球评",
-        "title": "没想到U17国足0-5西班牙，3次首战未胜却2进决赛"
+        "slot": "extra",
+        "type": "转会资讯",
+        "title": "郑智李霄鹏之外，哈维尔竟也被推荐给蓉城选帅"
       }
     ],
     "degraded": [
-      "data 槽用次优类型补位"
+      "main 槽用次优类型补位",
+      "data 槽无可用候选（不凑数，本批少写 1 篇）"
     ],
     "skipped": [],
     "day_counts": {
-      "热点球评": 1,
+      "热点球评": 3,
       "数据对比": 1
     },
     "selected": 2,
     "requested": 2
   },
   "batches_generated": [
-    "noon"
+    "evening"
   ],
-  "last_batch": "noon",
-  "last_updated": "2026-11-21 12:10:09",
+  "last_batch": "evening",
+  "last_updated": "2026-11-21 18:09:49",
   "batches_completed": [
     "morning",
     "noon"
