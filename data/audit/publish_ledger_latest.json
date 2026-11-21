@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "date": "2026-11-20",
-  "generated_at": "2026-11-20 10:07:08",
-  "batch_filter": "evening",
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21 00:08:34",
+  "batch_filter": "morning",
   "counts": {
     "total": 2,
     "published": 2,
@@ -31,7 +31,7 @@
     "available": true,
     "reason": "",
     "scope": "day_cumulative",
-    "path": "/home/runner/work/_temp/output/2026-11-20/metadata.json",
+    "path": "/home/runner/work/_temp/output/2026-11-21/metadata.json",
     "drafts": 2,
     "dropped_compliance": 0,
     "draft_total": 2,
@@ -44,19 +44,19 @@
   },
   "records": [
     {
-      "title": "苏比门迪12场380分钟，阿森纳竟不低价甩卖",
+      "title": "没想到拜仁1-1科隆，凯恩第20分钟伤退",
       "slug": "",
-      "batch_name": "晚间",
-      "platform_id": "7710192361600041487",
+      "batch_name": "晨读",
+      "platform_id": "7710409215835144744",
       "reason": "",
       "images": 3,
       "status": "published"
     },
     {
-      "title": "没想到苏比门迪7000万欧，阿森纳竟然不甩卖",
+      "title": "凯恩第20分钟伤退，拜仁1-1科隆竟只拿22分",
       "slug": "",
-      "batch_name": "晚间",
-      "platform_id": "7710192704642089506",
+      "batch_name": "晨读",
+      "platform_id": "7710409602700968463",
       "reason": "",
       "images": 3,
       "status": "published"
