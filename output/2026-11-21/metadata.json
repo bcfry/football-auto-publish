@@ -1,0 +1,882 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T00:05:16.595917",
+  "total_articles": 2,
+  "articles": [
+    {
+      "index": 1,
+      "title": "没想到拜仁1-1科隆，凯恩第20分钟伤退",
+      "path": "/home/runner/work/_temp/output/2026-11-21/article-1-没想到拜仁11科-2e1fed.md",
+      "slug": "没想到拜仁11科-2e1fed",
+      "tags": [
+        "Bayern Munich",
+        "Cologne",
+        "Bundesliga",
+        "Harry Kane",
+        "1-1"
+      ],
+      "keywords": [
+        "Bayern Munich",
+        "Cologne",
+        "Bundesliga",
+        "Harry Kane",
+        "1-1"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-21/images/article-1-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-21/images/article-1-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-21/images/article-1-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [
+        {
+          "file": "article-1-img-003.jpg",
+          "variant": "points",
+          "theme": "navy"
+        }
+      ],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-1-img-001.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_260920/6aafa80ea2f14_1280.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-21/6b008851a682dnative.htm",
+            "query": "奥利塞、拜仁",
+            "alt": "这能买到？法尔克：阿森纳有意奥利塞 拜仁没有设定3亿欧标价"
+          },
+          "width": 1200,
+          "height": 799
+        },
+        {
+          "file": "article-1-img-002.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_260901/6a95b2c79ef31_1280.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-21/6b00cc3f03544native.htm",
+            "query": "奥利塞、拜仁",
+            "alt": "拜仁官方：奥利塞诊断为前足挫伤，将在未来几天内接受治疗"
+          },
+          "width": 1200,
+          "height": 920
+        },
+        {
+          "file": "article-1-img-003.jpg",
+          "kind": "card:points",
+          "url": "",
+          "origin": {},
+          "width": 1200,
+          "height": 675
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": true,
+          "contradictions": [],
+          "suspicious": [
+            "拜仁 失球写作 30（事实 1），单侧归因疑为历史数据",
+            "拜仁 进球写作 0（事实 1），单侧归因疑为历史数据"
+          ],
+          "missing": [
+            "未提及 科隆先赛"
+          ],
+          "coverage": 0.67,
+          "legacy_issues": [],
+          "subject": "剑南春｜拜仁1-1科隆，布朗远射破门，凯恩、奥利塞伤退德甲1667 评",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 94,
+        "ok": true,
+        "reasons": [
+          "过程锚点：第N分钟、伤退/赛季报销",
+          "缺冲突/反差动作",
+          "R11数据:标题含悬念词「没想到」，回测点击率 +87%"
+        ],
+        "judged": true
+      },
+      "_anti_copy": {
+        "ok": false,
+        "issues": [
+          "事实点数少于最强源文（35 < 62）"
+        ]
+      },
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 11,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无事实矛盾（覆盖率 0.67）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无事实矛盾（覆盖率 0.67）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "轻度相似（0 字 / 2%），只记分：事实点数少于最强源文（35 < 62）",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "31 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "热点球评",
+      "topic_category": "战报比分",
+      "column_id": "hot-take",
+      "column_name": "老六辣评",
+      "batch_name": "晨读",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "二级·突发",
+      "title_elements": {
+        "numbers": [
+          "比分",
+          "序次",
+          "度量"
+        ],
+        "contrasts": [
+          "比分对照",
+          "反差"
+        ],
+        "proper_nouns": [
+          "凯恩",
+          "拜仁",
+          "科隆"
+        ],
+        "has_number": true,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 3
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [
+          "第N分钟",
+          "伤退/赛季报销"
+        ],
+        "anchor_repick": false,
+        "score": 94,
+        "pass": true,
+        "reasons": [
+          "过程锚点：第N分钟、伤退/赛季报销",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 1417,
+        "han_len": 932,
+        "paragraphs": 20,
+        "headings": 3,
+        "bullets": 0,
+        "quotes": 6,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      },
+      "hot_event_key": "凯恩|奥利塞|拜仁|科隆#injury",
+      "hot_rank": 2,
+      "hot_source": "dongqiudi",
+      "hot_channel": "media"
+    },
+    {
+      "index": 2,
+      "title": "凯恩第20分钟伤退，拜仁1-1科隆竟只拿22分",
+      "path": "/home/runner/work/_temp/output/2026-11-21/article-2-凯恩第20分钟伤-297961.md",
+      "slug": "凯恩第20分钟伤-297961",
+      "tags": [
+        "Bayern Munich",
+        "Cologne",
+        "Bundesliga",
+        "Harry Kane",
+        "1-1"
+      ],
+      "keywords": [
+        "Bayern Munich",
+        "Cologne",
+        "Bundesliga",
+        "Harry Kane",
+        "1-1"
+      ],
+      "images": [
+        "/home/runner/work/_temp/output/2026-11-21/images/article-2-img-001.jpg",
+        "/home/runner/work/_temp/output/2026-11-21/images/article-2-img-002.jpg",
+        "/home/runner/work/_temp/output/2026-11-21/images/article-2-img-003.jpg"
+      ],
+      "image_anchors": [],
+      "image_cards": [],
+      "image_shortfall": null,
+      "image_provenance": [
+        {
+          "file": "article-2-img-001.jpg",
+          "kind": "news_body",
+          "url": "https://tu.duoduocdn.com/uploads/day_261121/202611210548112877_1280.jpg",
+          "origin": {
+            "article_url": "https://news.zhibo8.com/zuqiu/2026-11-21/6b00bffecc547native.htm",
+            "query": "穆西亚拉",
+            "alt": "公开施压！鲁梅尼格：穆西亚拉若没拿出好表现只能考虑出售可能"
+          },
+          "width": 1200,
+          "height": 736
+        },
+        {
+          "file": "article-2-img-002.jpg",
+          "kind": "wikimedia",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Jamal_Musiala_10%2C_Kevin_Rodriguez_11_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01.jpg/1280px-Jamal_Musiala_10%2C_Kevin_Rodriguez_11_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "origin": {
+            "article_url": "",
+            "query": "Jamal Musiala",
+            "alt": "EAST RUTHERFORD, UNITED STATES - June 25: Jamal Musiala #10 "
+          },
+          "width": 1200,
+          "height": 1309
+        },
+        {
+          "file": "article-2-img-003.jpg",
+          "kind": "wikimedia",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Jamal_Musiala_10%2C_Pedro_Vite_15_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01.jpg/1280px-Jamal_Musiala_10%2C_Pedro_Vite_15_Ecuador_v_Germany_at_2026_Fifa_World_Cup_by_YantsImages_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "origin": {
+            "article_url": "",
+            "query": "Jamal Musiala",
+            "alt": "EAST RUTHERFORD, UNITED STATES - June 25: Jamal Musiala #10 "
+          },
+          "width": 1200,
+          "height": 799
+        }
+      ],
+      "_gate": {
+        "fact": {
+          "mode": "v2",
+          "judged": true,
+          "contradictions": [],
+          "suspicious": [
+            "无法归因的比分 3-30（事实 1-1）",
+            "拜仁 进球写作 0（事实 1），单侧归因疑为历史数据",
+            "拜仁 进球写作 0（事实 1），单侧归因疑为历史数据"
+          ],
+          "missing": [
+            "未提及 科隆先赛"
+          ],
+          "coverage": 0.67,
+          "legacy_issues": [],
+          "subject": "没想到穆西亚拉于帕解约条款同时曝光",
+          "legacy_conflicts": []
+        }
+      },
+      "_title_score": {
+        "score": 89,
+        "ok": true,
+        "reasons": [
+          "无过程锚点(建议写第几分钟/连进几球/谁被换下)",
+          "缺冲突/反差动作",
+          "R11数据:标题含悬念词「没想到」，回测点击率 +87%",
+          "R11数据:标题 22 字落在 21-30 回测最优区间"
+        ],
+        "judged": true
+      },
+      "_anti_copy": {
+        "ok": false,
+        "issues": [
+          "与源文连续重合 17 字（>12，疑似洗稿）",
+          "事实点数少于最强源文（35 < 62）"
+        ]
+      },
+      "_fidelity": {
+        "ok": true,
+        "issues": []
+      },
+      "_interaction": null,
+      "_consistency": null,
+      "_compliance": {
+        "drop": false,
+        "blocked_by": [],
+        "risk_score": 0,
+        "judged": 11,
+        "total": 14,
+        "verdicts": [
+          {
+            "id": "TT-01",
+            "name": "违反法律法规和相关政策",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无博彩话术、合规未熔断",
+            "hits": []
+          },
+          {
+            "id": "TT-02",
+            "name": "发布谣言或不实内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无事实矛盾（覆盖率 0.67）",
+            "hits": []
+          },
+          {
+            "id": "TT-03",
+            "name": "旧闻新发 / 旧闻翻炒 / 发布已过时效内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "not_judged",
+            "detail": "无 publish_by / source_age_hours 证据；素材侧由 hot_sources 36h 闸门覆盖",
+            "hits": []
+          },
+          {
+            "id": "TT-04",
+            "name": "标题党（严重 70 / 一般 20 / 轻微 10）",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无耸动词、无传闻断言（未覆盖：「标题与内容原意有偏差」这一子类没有判据（需要标题↔正文语义比对）。 当前只覆盖…）",
+            "hits": []
+          },
+          {
+            "id": "TT-05",
+            "name": "内容中关键信息与事实不符",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无事实矛盾（覆盖率 0.67）",
+            "hits": []
+          },
+          {
+            "id": "TT-06",
+            "name": "抄袭侵权（洗稿 / 搬运 / 整合汇编）",
+            "tier": "rewrite",
+            "credit": 20,
+            "status": "pass",
+            "detail": "轻度相似（17 字 / 4%），只记分：与源文连续重合 17 字（>12，疑似洗稿）；事实点数少于最强源文（35 < 62）",
+            "hits": []
+          },
+          {
+            "id": "TT-07",
+            "name": "诱导交互",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-08",
+            "name": "违规涨粉 / 引导互粉",
+            "tier": "block",
+            "credit": 20,
+            "status": "pass",
+            "detail": "无诱导话术",
+            "hits": []
+          },
+          {
+            "id": "TT-09",
+            "name": "图文不符 / 相关性差",
+            "tier": "block",
+            "credit": 10,
+            "status": "n/a",
+            "detail": "本篇无数据图锚点（只有信息图/新闻图），本条不适用",
+            "hits": []
+          },
+          {
+            "id": "TT-10",
+            "name": "格式低质",
+            "tier": "rewrite",
+            "credit": 10,
+            "status": "pass",
+            "detail": "29 段，无乱码与重复段",
+            "hits": []
+          },
+          {
+            "id": "TT-11",
+            "name": "失实表述（含 AI 生成未标识）",
+            "tier": "block",
+            "credit": 10,
+            "status": "pass",
+            "detail": "正文含 AI 标识",
+            "hits": []
+          },
+          {
+            "id": "TT-12",
+            "name": "违规声明头条首发",
+            "tier": "pass",
+            "credit": 5,
+            "status": "pass",
+            "detail": "单平台（仅头条号）：72 小时内仅在头条发布客观成立",
+            "hits": []
+          },
+          {
+            "id": "TT-13",
+            "name": "无资质发布专业领域内容",
+            "tier": "block",
+            "credit": 70,
+            "status": "pass",
+            "detail": "无时政类表述",
+            "hits": []
+          },
+          {
+            "id": "TT-14",
+            "name": "低质 AIGC（账号级处置）",
+            "tier": "warn",
+            "credit": 0,
+            "status": "not_judged",
+            "detail": "批量级判据（需 ≥5 篇可比样本），出口单篇不判；由发布前 verify_compliance 与每日层负责",
+            "hits": []
+          }
+        ]
+      },
+      "sources_used": [
+        "直播吧 zhibo8.cc"
+      ],
+      "source_post": "",
+      "originality_note": "",
+      "content_type": "数据对比",
+      "topic_category": "战报比分",
+      "column_id": "hua-ti-lei-tai",
+      "column_name": "话题擂台",
+      "batch_name": "晨读",
+      "is_prediction": false,
+      "prediction_basis": 0,
+      "prediction_basis_items": [],
+      "is_recap": false,
+      "supply_layer": "三级·软性",
+      "title_elements": {
+        "numbers": [
+          "比分",
+          "序次",
+          "度量"
+        ],
+        "contrasts": [
+          "比分对照",
+          "落差",
+          "反差"
+        ],
+        "proper_nouns": [
+          "凯恩",
+          "拜仁",
+          "科隆"
+        ],
+        "has_number": true,
+        "has_contrast": true,
+        "has_proper": true,
+        "count": 3
+      },
+      "title_gate": {
+        "question_ending": false,
+        "fallback": "",
+        "anchor_kinds": [
+          "第N分钟",
+          "伤退/赛季报销"
+        ],
+        "anchor_repick": false,
+        "score": 92,
+        "pass": true,
+        "reasons": [
+          "过程锚点：第N分钟、伤退/赛季报销",
+          "缺冲突/反差动作"
+        ],
+        "quota": {
+          "limit": 2,
+          "used": 1,
+          "exhausted": false
+        }
+      },
+      "content_stats": {
+        "chars": 1344,
+        "han_len": 862,
+        "paragraphs": 19,
+        "headings": 2,
+        "bullets": 0,
+        "quotes": 5,
+        "tags": [],
+        "cta": true,
+        "images": 3,
+        "degraded": []
+      }
+    }
+  ],
+  "topics": [
+    {
+      "title": "剑南春｜拜仁1-1科隆，布朗远射破门，凯恩、奥利塞伤退德甲1667 评",
+      "angle": "热点事件「剑南春｜拜仁1-1科隆，布朗远射破门，凯恩、奥利塞伤退德甲1667 评」，从球迷情绪与争议点切入",
+      "keywords": [],
+      "keywords_cn": [
+        "剑南春｜拜仁1-1科隆，布朗远射破门，凯恩、奥利塞伤退德甲1667 评"
+      ],
+      "content_type": "热点球评",
+      "score": 100,
+      "controversy_level": "high",
+      "why_pick": "媒体头条（dongqiudi）",
+      "_supply_layer": "二级·突发",
+      "_hot_event_key": "凯恩|奥利塞|拜仁|科隆#injury",
+      "_hot_rank": 2,
+      "_hot_source": "dongqiudi",
+      "_hot_channel": "media",
+      "_hot_providers": [
+        "dongqiudi"
+      ],
+      "_hot_support": [
+        "剑南春｜拜仁1-1科隆，布朗远射破门，凯恩、奥利塞伤退德甲1667 评"
+      ],
+      "_hot_support_raw": [
+        {
+          "title": "剑南春｜拜仁1-1科隆，布朗远射破门，凯恩、奥利塞伤退德甲1667 评",
+          "url": "https://www.dongqiudi.com/articles/6674610.html",
+          "source": "dongqiudi"
+        }
+      ]
+    },
+    {
+      "title": "没想到穆西亚拉于帕解约条款同时曝光",
+      "angle": "德天空把穆西亚拉和于帕的解约条款一起摆出来，拜仁过去7天已深挖过要避开，这次只抓德甲合同结构这个冷知识：豪门留人，也得给球员留门。观点很明确，别把条款当离队倒计时。",
+      "keywords": [
+        "Jamal Musiala",
+        "Dayot Upamecano",
+        "release clause"
+      ],
+      "keywords_cn": [
+        "穆西亚拉",
+        "于帕梅卡诺",
+        "解约条款"
+      ],
+      "content_type": "数据对比",
+      "score": 84,
+      "controversy_level": "medium",
+      "target_emotion": "好奇",
+      "resonance_angle": "老球迷身份认同",
+      "series_id": "无",
+      "why_pick": "两名球员条款横向比，信息增量足",
+      "_category": "转会官宣",
+      "_column_id": "hua-ti-lei-tai",
+      "_column_name": "话题擂台",
+      "_column_icon": "🥊",
+      "_writing_style": "烧烤摊辩论体",
+      "_style_detail": "先摆出争议话题（一句话定调）→ 正方观点（2-3个论据）→ 反方观点（2-3个论据）→ 老六亮明态度（核心论据）→ 邀请读者说出自己的判断。语气像烧烤摊上和朋友抬杠，可以激动但不说脏话。必须给双方都有说话的机会，但最后必须有你自己的态度。",
+      "_word_count_range": [
+        400,
+        600
+      ],
+      "_interaction_type": "side_taking_vote",
+      "_interaction_guidance": "文末把判断抛给读者：'你更认哪一边？我先说我的判断和理由——…'",
+      "_topic_domain": "足球争议话题",
+      "_topic_guidance": "一个有争议的足球话题，列出正反两方观点，最后给出老六的判断和理由。话题要能让读者看完后立刻想去评论区表态。适合的话题：'XX该不该下课''XX转会到底值不值''VAR到底该不该废除'等。",
+      "_data_source_hint": "gzh_preferred",
+      "_batch_name": "晨读",
+      "_batch_time": "08:00",
+      "_reader_scenario": "通勤/早咖啡，需要快速了解发生了什么",
+      "_overall_tone": "轻快、信息密度高、适合碎片化阅读",
+      "_rank_id": "topic-1"
+    }
+  ],
+  "data_sources": {},
+  "mix_guard": {
+    "window": [
+      "2026-11-08",
+      "2026-11-21"
+    ],
+    "n": 75,
+    "batch_n": 2,
+    "ok": false,
+    "table": {
+      "转会官宣": {
+        "count": 19,
+        "pct": 25.3,
+        "target": 30.0,
+        "over": false
+      },
+      "中国足球": {
+        "count": 13,
+        "pct": 17.3,
+        "target": 25.0,
+        "over": false
+      },
+      "冲突舆情": {
+        "count": 1,
+        "pct": 1.3,
+        "target": 20.0,
+        "over": false
+      },
+      "未分类": {
+        "count": 19,
+        "pct": 25.3,
+        "target": 15.0,
+        "over": true
+      },
+      "战报比分": {
+        "count": 23,
+        "pct": 30.7,
+        "target": 10.0,
+        "over": true
+      }
+    }
+  },
+  "mix_overshoot": [
+    {
+      "type": "战报比分",
+      "actual": 30.7,
+      "target": 10.0,
+      "delta": 20.7
+    },
+    {
+      "type": "未分类",
+      "actual": 25.3,
+      "target": 15.0,
+      "delta": 10.3
+    }
+  ],
+  "image_floor": {
+    "since": "2026-11-05",
+    "min_per_article": 3,
+    "articles_below": 0
+  },
+  "supply_layers": {
+    "total": 2,
+    "counts": {
+      "一级·确定性": 0,
+      "二级·突发": 1,
+      "三级·软性": 1
+    },
+    "ratios": {
+      "一级·确定性": 0.0,
+      "二级·突发": 50.0,
+      "三级·软性": 50.0
+    },
+    "targets": {
+      "一级·确定性": 30.0,
+      "二级·突发": 50.0,
+      "三级·软性": 20.0
+    },
+    "deviations": {
+      "一级·确定性": -30.0,
+      "二级·突发": 0.0,
+      "三级·软性": 30.0
+    },
+    "unclassified": 0,
+    "l3_breakdown": {
+      "data_driven": 1,
+      "other": 0,
+      "data_types": [
+        "数据对比",
+        "排行榜"
+      ]
+    }
+  },
+  "degrade_events": [
+    {
+      "环节": "赛程源",
+      "原因": "本批无可用赛程选题（源不可用或无匹配）",
+      "处置": "退化为纯新闻流驱动，选题池仅由事实卡装配",
+      "数量": 1
+    },
+    {
+      "环节": "反洗稿记分",
+      "原因": "与源文连续重合 17 字（>12，疑似洗稿）；事实点数少于最强源文（35 < 62）",
+      "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
+      "数量": 1
+    },
+    {
+      "环节": "反洗稿记分",
+      "原因": "事实点数少于最强源文（35 < 62）",
+      "处置": "不阻断发布，已记入 metadata 的 _anti_copy（v2 只记分）",
+      "数量": 1
+    },
+    {
+      "环节": "配图补齐",
+      "原因": "真实图源只拿到 2 张",
+      "处置": "用 1 张原创信息图补到 3 张",
+      "数量": 1
+    }
+  ],
+  "type": "match_analysis",
+  "quota": {
+    "batch": "morning",
+    "max_articles": 2,
+    "uplifted": false,
+    "reason": null,
+    "requested_reason": null,
+    "normal_max": 2,
+    "uplift_max": 3,
+    "weekly_limit": 2,
+    "weekly_used": 2,
+    "detail": "常态 2 篇",
+    "source": "策略手册 第五章 / 完善计划 12.1"
+  },
+  "ranker_mode": "llm",
+  "hot_topics": [
+    {
+      "title": "剑南春｜拜仁1-1科隆，布朗远射破门，凯恩、奥利塞伤退德甲1667 评",
+      "rank": 2,
+      "source": "dongqiudi",
+      "channel": "media",
+      "event_key": "凯恩|奥利塞|拜仁|科隆#injury"
+    }
+  ],
+  "batch_mix": {
+    "slots": [
+      "main",
+      "data"
+    ],
+    "picked": [
+      {
+        "slot": "main",
+        "type": "热点球评",
+        "title": "剑南春｜拜仁1-1科隆，布朗远射破门，凯恩、奥利塞伤退德"
+      },
+      {
+        "slot": "data",
+        "type": "数据对比",
+        "title": "没想到穆西亚拉于帕解约条款同时曝光"
+      }
+    ],
+    "degraded": [],
+    "skipped": [
+      {
+        "type": "转会资讯",
+        "title": "没想到范戴克把续约说成体面告别"
+      }
+    ],
+    "day_counts": {},
+    "selected": 2,
+    "requested": 2
+  },
+  "batches_generated": [
+    "morning"
+  ],
+  "last_batch": "morning",
+  "last_updated": "2026-11-21 08:05:16"
+}
