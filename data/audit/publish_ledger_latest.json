@@ -1,8 +1,8 @@
 {
   "version": 2,
   "date": "2026-11-21",
-  "generated_at": "2026-11-21 04:10:09",
-  "batch_filter": "noon",
+  "generated_at": "2026-11-21 10:13:07",
+  "batch_filter": "evening",
   "counts": {
     "total": 2,
     "published": 2,
@@ -44,19 +44,19 @@
   },
   "records": [
     {
-      "title": "亨德森对话切尔西，原来全围绕足球",
+      "title": "国足出线53.7%对0.1%夺冠，原来差在这",
       "slug": "",
-      "batch_name": "午间",
-      "platform_id": "7710471451232469540",
+      "batch_name": "晚间",
+      "platform_id": "7710565001227977226",
       "reason": "",
       "images": 3,
       "status": "published"
     },
     {
-      "title": "U17国足0-5西班牙U17，21年等待原来这么扎心",
+      "title": "蓉城选帅推荐名单：郑智李霄鹏之外，哈维尔竟也被推荐",
       "slug": "",
-      "batch_name": "午间",
-      "platform_id": "7710471852036063807",
+      "batch_name": "晚间",
+      "platform_id": "7710565390417707530",
       "reason": "",
       "images": 3,
       "status": "published"
